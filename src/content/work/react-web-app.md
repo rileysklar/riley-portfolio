@@ -1,15 +1,19 @@
 ---
-title: h2.0
-publishDate: 2019-10-02 00:00:00
-img: /assets/stock-4.jpg
-img_alt: Soft pink and baby blue water ripples together in a subtle texture.
+title: React.js Web App
+publishDate: 2023-10-06 00:00:00
+img: /assets/didyouknow.png
+img_alt: A message board that has functionality to dynamically call a database. Users can contribute facts, upvote and downvote facts based on their perceived truthfulness, cite their source, and sort by taxonomies.
 description: |
-  We developed brand positioning and design assets for the launch
-  of a new colored water product.
+  Think of it as a message board that has functionality to dynamically call a database—Supabase—users can contribute facts, upvote and downvote facts based on their perceived truthfulness, cite their source, and sort by taxonomies.
 tags:
+  - Web App
+  - React.js
+  - Supabase
   - Design
-  - Branding
+  - Development
 ---
+
+<a href="https://shakewell-didyouknow.netlify.app/">Visit the live web app</a>
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur posuere commodo venenatis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam non ligula vel metus efficitur hendrerit. In hac habitasse platea dictumst. Praesent et mauris ut mi dapibus semper. Curabitur tortor justo, efficitur sit amet pretium cursus, porta eget odio. Cras ac venenatis dolor. Donec laoreet posuere malesuada. Curabitur nec mi tempor, placerat leo sit amet, tincidunt est. Quisque pellentesque venenatis magna, eget tristique nibh pulvinar in. Vestibulum vitae volutpat arcu. Aenean ut malesuada odio, sit amet pellentesque odio. Suspendisse nunc elit, blandit nec hendrerit non, aliquet at magna. Donec id leo ut nulla sagittis sodales.
 

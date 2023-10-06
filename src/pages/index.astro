@@ -30,8 +30,8 @@ const projects = (await getCollection("work"))
     <div class="wrapper stack gap-8 lg:gap-20">
       <header class="hero">
         <Hero
-          title="hi, I'm Riley"
-          tagline="I am a Creative Developer and Designer who is currently based in Austin, Texas."
+          title="Hi, I'm Riley..."
+          tagline="a Creative Developer and Designer who is currently based in Austin, Texas."
           align="start"
         >
           <div class="roles">
@@ -55,7 +55,7 @@ const projects = (await getCollection("work"))
     <main class="wrapper stack gap-20 lg:gap-48">
       <section class="section with-background with-cta">
         <header class="section-header stack gap-2 lg:gap-4">
-          <h3>Selected Work</h3>
+          <h3>Featured Work</h3>
           <p>
             Take a look below at some of my featured work for clients from the
             past few years.
@@ -131,9 +131,9 @@ const projects = (await getCollection("work"))
     /* aspect-ratio: 5 / 4; */
     object-fit: cover;
     object-position: top;
-    border-radius: 1.5rem;
-    border: solid 2px #f3f4f7;
-    /* box-shadow: var(--shadow-md); */
+    border-radius: 0.75rem;
+    order: 1px solid var(--gray-800);
+    box-shadow: var(--shadow-md);
   }
 
   @media (min-width: 50em) {
@@ -152,7 +152,7 @@ const projects = (await getCollection("work"))
 
     .hero img {
       aspect-ratio: 1;
-      border-radius: 4.5rem;
+      border-radius: 1.25rem;
       object-fit: cover;
     }
   }
