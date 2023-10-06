@@ -9,8 +9,6 @@ tags:
   - Web App
   - React.js
   - Supabase
-  - Design
-  - Development
 ---
 
 <a href="https://shakewell-didyouknow.netlify.app/">Visit the live web app</a>
