@@ -8,7 +8,7 @@ interface Props {
 
 const {
   title = "Riley Sklar Portfolio",
-  description = "The personal site of Jeanine White",
+  description = "Portfolio of Web Developer and Designer based in Austin, Texas.",
 } = Astro.props;
 ---
 
@@ -16,6 +16,7 @@ const {
 <meta name="description" property="og:description" content={description} />
 <meta name="viewport" content="width=device-width" />
 <meta name="generator" content={Astro.generator} />
+<meta property="og:image" content="/public/assets/headshot.jpg" />
 <title>{title}</title>
 
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
