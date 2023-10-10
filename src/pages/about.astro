@@ -63,36 +63,38 @@ import Hero from "../components/Hero.astro";
       <section>
         <h2 class="section-title">Education</h2>
         <div class="content">
-          <b>Texas A&M University</b> | 2008-2012 <br /> BA International Studies,
-          Minor in Spanish
+          <h4>Texas A&M University</h4> 2008-2012 <br />BA International
+          Studies, Minor in Spanish
         </div>
         <div class="content">
-          <b>Universidad de Costa Rica</b> | 2009 <br /> San Jose, Costa Rica
+          <h4>Universidad de Costa Rica</h4> 2009 <br />San Jose, Costa Rica
           <br /> Spanish
         </div>
         <div class="content">
-          <b>Oxford TEFL</b> | 2013 <br /> Barcelona, Spain
+          <h4>Oxford TEFL</h4> 2013 <br /> Barcelona, Spain
           <br /> TEFL Certification
         </div>
       </section>
       <section>
         <h2 class="section-title">Skills</h2>
         <div class="content">
-          <p>JavaScript</p>
-          <p>PHP</p>
-          <p>UI/UX Design</p>
-          <p>Figma</p>
-          <p>Astro.js</p>
-          <p>XML</p>
-          <p>HTML5</p>
-          <p>Tailwind CSS</p>
-          <p>CSS</p>
-          <p>VS Code</p>
-          <p>WordPress</p>
-          <p>Craft CMS</p>
-          <p>Astro.js</p>
-          <p>WP Engine</p>
-          <p>AWS</p>
+          <ul class="two-column-list">
+            <li>JavaScript</li>
+            <li>PHP</li>
+            <li>UI/UX Design</li>
+            <li>Figma</li>
+            <li>Astro.js</li>
+            <li>XML</li>
+            <li>HTML5</li>
+            <li>Tailwind CSS</li>
+            <li>CSS</li>
+            <li>VS Code</li>
+            <li>WordPress</li>
+            <li>Craft CMS</li>
+            <li>Astro.js</li>
+            <li>WP Engine</li>
+            <li>AWS</li>
+          </ul>
         </div>
       </section>
     </main>
@@ -102,6 +104,11 @@ import Hero from "../components/Hero.astro";
 </BaseLayout>
 
 <style>
+  .two-column-list {
+    columns: 2; /* Create two columns */
+    column-gap: 20px; /* Adjust the gap between columns as needed */
+  }
+
   .about {
     display: flex;
     flex-direction: column;
