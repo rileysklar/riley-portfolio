@@ -87,8 +87,8 @@ const projects = (await getCollection("work"))
           <h3>Mentions</h3>
 
           <p>
-            I have been fortunate enough to receive praise for my work in
-            the following publications.
+            I have been fortunate enough to receive praise for my work in the
+            following publications.
           </p>
         </header>
 
@@ -135,12 +135,13 @@ const projects = (await getCollection("work"))
     border-radius: 0.75rem;
     order: 1px solid var(--gray-800);
     box-shadow: var(--shadow-md);
+    max-width: 60%;
   }
 
   @media (min-width: 50em) {
     .hero {
       display: grid;
-      grid-template-columns: 6fr 4fr;
+      grid-template-columns: 6fr 2fr;
       padding-inline: 2.5rem;
       gap: 3.75rem;
     }
@@ -155,6 +156,7 @@ const projects = (await getCollection("work"))
       aspect-ratio: 1;
       border-radius: 1.25rem;
       object-fit: cover;
+      max-width: 100%;
     }
   }
 
