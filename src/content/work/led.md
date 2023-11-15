@@ -37,6 +37,43 @@ Our partnership with Fluence is built on a solid foundation of trust, collaborat
 - SEO (Search Engine Optimization): Techniques for improving search engine rankings.
 - Customer Support and Communication: Effective client interaction and support.
 
+##### **Primary Colors**
+
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);"  src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FLZ0rKaRmhjTYYYaae0NIqE%2FFluence-Style-Guide%3Ftype%3Ddesign%26node-id%3D3%253A708%26mode%3Ddesign%26t%3DDb4KsUNPINGi2bJH-1" allowfullscreen></iframe>
+
+---
+
+##### **Secondary Colors**
+
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);"  src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FLZ0rKaRmhjTYYYaae0NIqE%2FFluence-Style-Guide%3Ftype%3Ddesign%26node-id%3D8%253A257%26mode%3Ddesign%26t%3DDb4KsUNPINGi2bJH-1" allowfullscreen></iframe>
+
+---
+
+##### **Fonts**
+
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);"  src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FLZ0rKaRmhjTYYYaae0NIqE%2FFluence-Style-Guide%3Ftype%3Ddesign%26node-id%3D11%253A344%26mode%3Ddesign%26t%3DDb4KsUNPINGi2bJH-1" allowfullscreen></iframe>
+
+---
+
+##### **Text Styles**
+
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);"  src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FLZ0rKaRmhjTYYYaae0NIqE%2FFluence-Style-Guide%3Ftype%3Ddesign%26node-id%3D12%253A528%26mode%3Ddesign%26t%3DDb4KsUNPINGi2bJH-1" allowfullscreen></iframe>
+
+---
+
+##### **Logo**
+
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);"  src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FLZ0rKaRmhjTYYYaae0NIqE%2FFluence-Style-Guide%3Ftype%3Ddesign%26node-id%3D12%253A552%26mode%3Ddesign%26t%3DDb4KsUNPINGi2bJH-1" allowfullscreen></iframe>
+
+---
+
+<style> iframe {
+      min-height: 600px;
+      width: 100%;
+ 
+}
+</style>
+
 #### Lighting a Sustainable Path: Fluence's Innovation
 
 Fluence is at the forefront of creating lighting solutions for controlled environment commercial crop production. Their dedication to innovation and sustainability has positioned them as leaders in their industry. They employ the latest research in photobiology, evidence-based design, precise engineering, and advanced technology to craft cutting-edge lighting solutions. These solutions not only optimize crop growth but also contribute to a healthier and more sustainable world by efficiently utilizing resources and enhancing crop quality.
