@@ -39,6 +39,7 @@ Our partnership with Fluence is built on a solid foundation of trust, collaborat
 
 ##### **Primary Colors**
 
+<div class="style-guide-figma">
 <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);"  src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FLZ0rKaRmhjTYYYaae0NIqE%2FFluence-Style-Guide%3Ftype%3Ddesign%26node-id%3D3%253A708%26mode%3Ddesign%26t%3DDb4KsUNPINGi2bJH-1" allowfullscreen></iframe>
 
 ---
@@ -67,10 +68,22 @@ Our partnership with Fluence is built on a solid foundation of trust, collaborat
 
 ---
 
-<style> iframe {
-      min-height: 600px;
-      width: 100%;
- 
+</div>
+<style>
+
+iframe {
+min-height: 600px;
+width: 100%;
+}
+
+.style-guide-figma {
+display: inline-block;
+}
+
+@media (min-width: 50em) {
+.style-guide-figma {
+display: none;
+}
 }
 </style>
 
