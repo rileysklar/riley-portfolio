@@ -49,6 +49,11 @@ const projects = (await getCollection("work"))
                 <Icon icon="microphone-stage" size="1.33em" /> Musician
               </Pill></a
             >
+            <a href="/work"
+              ><Pill>
+                <Icon icon="trophy" size="1.33em" /> Team Leader
+              </Pill></a
+            >
           </div>
         </Hero>
 
@@ -139,9 +144,11 @@ const projects = (await getCollection("work"))
 
   .roles {
     display: flex;
-    flex-direction: column;
-    gap: 1em;
-    text-align: center;
+    gap: 2em;
+    flex-wrap: wrap;
+    text-wrap: balance;
+    font-size: 0.5em;
+    justify-content: center;
   }
 
   .roles a {
@@ -170,7 +177,8 @@ const projects = (await getCollection("work"))
       margin-top: 0.5rem;
       display: flex;
       flex-direction: row;
-      gap: 0.5rem;
+      gap: 1rem;
+      justify-content: start;
     }
 
     .hero img {
