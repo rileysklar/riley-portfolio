@@ -24,7 +24,7 @@ Our web app introduces a visionary approach to home building by seamlessly integ
 
 - Custom Web Application: We crafted a bespoke web application tailored to the unique requirements of the home builder.
 - WordPress Stack: The backbone of our solution is built on WordPress, providing flexibility and scalability.
-- Elementor: We employed Elementor, a versatile page builder, for data migration and content creation.
+- Elementor: We employed Elementor, a versatile page builder, for data migration and content creation which was perfect for hand off to the client.
   HTML, CSS, and JavaScript: Front-end technologies are harnessed to design an attractive and user-friendly interface.
 - XML Integration: Custom XML integration enables the seamless transfer of property listings to Zillow and NHS BDX.
 - Data Migration Expertise: Our team's proficiency in data migration ensures a smooth transition of existing data into the new platform.
