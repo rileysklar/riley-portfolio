@@ -28,6 +28,5 @@ Our web app leverages gamification principles to make the recruitment process no
 - Gamification Framework: An innovative gamification framework is implemented to create challenges, rewards, and a competitive edge.
 - Responsive Design: The web app boasts a responsive design to ensure a seamless user experience on various devices and screen sizes.
 - Security Measures: We have implemented robust security measures to safeguard candidate data and maintain user privacy.
-- Communication and Support: Effective communication and comprehensive customer support are integral parts of our solution. We ensure potential workers have access to the information they need and receive timely assistance during the application process.
 
 Our gamified web app is not just a recruitment tool; it's a testament to our commitment to pushing the boundaries of technology to deliver exceptional solutions for our clients. By combining innovative gamification with a solid technology stack, we are reshaping workforce recruitment for TXDOT, making it more interactive and engaging than ever before. Together, we are setting new standards in the field and facilitating a brighter future for the workforce in Texas.
