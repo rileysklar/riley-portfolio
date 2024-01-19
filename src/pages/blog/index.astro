@@ -15,16 +15,16 @@ const projects = (await getCollection("blog")).sort(
 
 <BaseLayout
   title="Blog | Riley Sklar"
-  description="Learn about Riley Sklar's most recent projects"
+  description="Riley' Sklar's collection of blogs"
 >
   <div class="stack gap-20">
     <main class="wrapper stack gap-8">
       <Hero
         title="Blog"
-        tagline="See my most recent projects below to get an idea of my past experience."
+        tagline="See my most recent blog posts below."
         align="start"
       />
-      <Grid variant="">
+      <Grid variant="offset">
         {
           projects.map((project) => (
             <li>
