@@ -8,7 +8,6 @@ description: |
 tags:
   - Front End Developer
   - UI/UX Designer
-  - Senior Software Developer
 ---
 
 In the ever-evolving landscape of web development, the role of a front-end designer has become increasingly complex and multifaceted. Traditionally, designers and developers operated in distinct spheres, with a clear line dividing the creative process from the technical implementation. However, the modern digital era demands professionals who can seamlessly integrate design and code. This is where the journey of our protagonist, a front-end designer who first mastered UI/UX design before delving into coding, begins.
