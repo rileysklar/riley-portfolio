@@ -9,11 +9,10 @@ import Hero from "../components/Hero.astro";
   title="Riley Sklar Portfolio"
   description="Web Designer and Developer | Austin, Texas"
 >
-  <div class="stack gap-20">
-    <main class="wrapper about">
+  <main class="stack gap-20">
+    <div class="wrapper about">
       <Hero title="About" tagline="">
-        🚀 Web Developer | 🖊️ UI/UX Designer | 📱 Mobile & Product Enthusiast |
-        🎸 Musician | 📍 Austin, Texas
+        🚀 Web Developer | 📱 UI/UX Designer <br /> 📍 Austin, Texas
         <img
           width="1553"
           height="873"
@@ -55,6 +54,43 @@ import Hero from "../components/Hero.astro";
           </ul>
         </div>
       </section>
+
+      <section><h3 class="section-title">Experience</h3></section>
+      <div class="content">
+        <h5>ShakeWell Creative</h5>
+        <p class="job-title">Web Developer — Team Lead</p>
+        <p class="duration">Sep 2022 - Present</p>
+        <p class="location">Austin, Texas, United States</p>
+        <ul class="responsibilities">
+          <li>Front-End Development</li>
+          <li>UI/UX Web App Design</li>
+          <li>Shopify, eComm, Liquid</li>
+          <li>Figma Prototyping/Wireframing</li>
+          <li>SOPs/Documentation in Starlight Astro framework</li>
+          <li>Design System Development</li>
+          <li>WordPress Full Stack Development</li>
+          <li>HTML, CSS, JavaScript, jQuery, React, PHP, XML, GitHub</li>
+        </ul>
+        <p class="skills">
+          Skills: jQuery · Zapier · Design system · Full-Stack Development ·
+          React.js · Figma (Software) · User Interface Design · CSS Flexbox ·
+          JavaScript · PHP
+        </p>
+      </div>
+      <div class="content">
+        <h5>Hero Digital</h5>
+
+        <p class="job-title">Lead Production Designer</p>
+         Apple UI/UX Mobile Product Design Contract <br />
+        <p class="duration">July 2022 - September 2022</p>
+        <p class="location">Austin, Texas, United States</p>
+        <p class="skills">
+          Skills: Visual Design · Adobe Creative Suite · Landing Pages · Art
+          Direction · User Experience (UX) · Content Strategy · Design Systems ·
+          Figma (Software) · Creative Pitching · Responsive Web Design · User
+          Interface Design · Slide Decks
+        </p>
+      </div>
       <section>
         <h3 class="section-title">Education</h3>
         <div class="content">
@@ -94,71 +130,71 @@ import Hero from "../components/Hero.astro";
           </ul>
         </div>
       </section>
-    </main>
+    </div>
 
     <ContactCTA />
-  </div>
-</BaseLayout>
+  </main>
 
-<style>
-  .two-column-list {
-    columns: 2; /* Create two columns */
-    column-gap: 20px; /* Adjust the gap between columns as needed */
-  }
-
-  .about {
-    display: flex;
-    flex-direction: column;
-    gap: 3.5rem;
-  }
-
-  img {
-    margin-top: 1.5rem;
-    border-radius: 1.5rem;
-    box-shadow: var(--shadow-md);
-  }
-
-  section {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    color: var(--gray-200);
-  }
-
-  .section-title {
-    grid-column-start: 1;
-    font-size: var(--text-xl);
-    color: var(--gray-0);
-  }
-
-  .content {
-    grid-column: 2 / 4;
-  }
-
-  .content :global(a) {
-    text-decoration: 1px solid underline transparent;
-    text-underline-offset: 0.25em;
-    transition: text-decoration-color var(--theme-transition);
-  }
-
-  .content :global(a:hover),
-  .content :global(a:focus) {
-    text-decoration-color: currentColor;
-  }
-
-  @media (min-width: 50em) {
-    .about {
-      display: grid;
-      grid-template-columns: 1fr 60% 1fr;
+  <style>
+    .two-column-list {
+      columns: 2; /* Create two columns */
+      column-gap: 20px; /* Adjust the gap between columns as needed */
     }
 
-    .about > :global(:first-child) {
-      grid-column-start: 2;
+    .about {
+      display: flex;
+      flex-direction: column;
+      gap: 3.5rem;
+    }
+
+    img {
+      margin-top: 1.5rem;
+      border-radius: 1.5rem;
+      box-shadow: var(--shadow-md);
     }
 
     section {
-      display: contents;
-      font-size: var(--text-lg);
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      color: var(--gray-200);
     }
-  }
-</style>
+
+    .section-title {
+      grid-column-start: 1;
+      font-size: var(--text-xl);
+      color: var(--gray-0);
+    }
+
+    .content {
+      grid-column: 2 / 4;
+    }
+
+    .content :global(a) {
+      text-decoration: 1px solid underline transparent;
+      text-underline-offset: 0.25em;
+      transition: text-decoration-color var(--theme-transition);
+    }
+
+    .content :global(a:hover),
+    .content :global(a:focus) {
+      text-decoration-color: currentColor;
+    }
+
+    @media (min-width: 50em) {
+      .about {
+        display: grid;
+        grid-template-columns: 1fr 60% 1fr;
+      }
+
+      .about > :global(:first-child) {
+        grid-column-start: 2;
+      }
+
+      section {
+        display: contents;
+        font-size: var(--text-lg);
+      }
+    }
+  </style>
+</BaseLayout>

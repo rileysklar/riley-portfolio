@@ -2,57 +2,63 @@
 import Icon from "./Icon.astro";
 ---
 
-<section class="box skills">
-  <div class="stack gap-2 lg:gap-4">
-    <Icon
-      icon="terminal-window"
-      color="var(--accent-regular)"
-      size="2.5rem"
-      gradient
-    />
-    <h2>Full Stack</h2>
-    <p>
-      Adaptable skills for diverse projects and rapid mastery of new
-      technologies and languages as required. Proficient in various programming
-      languages, ensuring effective contribution to a range of projects with
-      quick adaptation to evolving tech needs.
-    </p>
-
-    <ul>
-      <li>
-        <strong>Technologies:</strong> JavaScript, Astro, React, Node.js, Shopify,
-        Liquid, HTML5, CSS, Tailwind, SCSS, jQuery, PHP, XML, Python, WordPress,
-        GitHub, Supabase, AWS, VS Code, Figma
-      </li>
-    </ul>
-  </div>
-  <div class="stack gap-2 lg:gap-4">
-    <Icon icon="trophy" color="var(--accent-regular)" size="2.5rem" gradient />
-    <h2>Team Leader</h2>
-    <p>
-      I guide and empower colleagues to be their best selves. Elevating teams by
-      uniting their strengths, fostering growth, and crafting outstanding work
-      together.
-    </p>
-  </div>
-  <div class="stack gap-2 lg:gap-4">
-    <Icon
-      icon="strategy"
-      color="var(--accent-regular)"
-      size="2.5rem"
-      gradient
-    />
-    <h2>Design Focused</h2>
-    <p>
-      Combining design and development skills offers the unique advantage of not
-      only creating visually appealing and user-friendly products but also
-      ensuring their seamless functionality, resulting in a holistic user
-      experience that captures both form and function.
-    </p>
-  </div>
-</section>
-
+<div class="box">
+  <section class="skills">
+    <div class="stack gap-2 lg:gap-4">
+      <Icon
+        icon="terminal-window"
+        color="var(--accent-regular)"
+        size="2.5rem"
+        gradient
+      />
+      <h2>Full Stack</h2>
+      <p>
+        Adaptable skills for diverse projects and rapid mastery of new
+        technologies and languages as required. Proficient in various
+        programming languages, ensuring effective contribution to a range of
+        projects with quick adaptation to evolving tech needs.
+      </p>
+    </div>
+    <div class="stack gap-2 lg:gap-4">
+      <Icon
+        icon="trophy"
+        color="var(--accent-regular)"
+        size="2.5rem"
+        gradient
+      />
+      <h2>Team Leader</h2>
+      <p>
+        I guide and empower colleagues to be their best selves. Elevating teams
+        by uniting their strengths, fostering growth, and crafting outstanding
+        work together.
+      </p>
+    </div>
+    <div class="stack gap-2 lg:gap-4">
+      <Icon
+        icon="strategy"
+        color="var(--accent-regular)"
+        size="2.5rem"
+        gradient
+      />
+      <h2>Design Focused</h2>
+      <p>
+        Combining design and development skills offers the unique advantage of
+        not only creating visually appealing and user-friendly products but also
+        ensuring their seamless functionality, resulting in a holistic user
+        experience that captures both form and function.
+      </p>
+    </div>
+  </section>
+  <p class="skills-list">
+    <strong>Technologies:</strong> JavaScript, Astro, React, Node.js, Shopify, Liquid,
+    HTML5, CSS, Tailwind, SCSS, jQuery, PHP, XML, Python, WordPress, GitHub, Supabase,
+    AWS, VS Code, Figma
+  </p>
+</div>
 <style>
+  .skills-list {
+    padding-top: 2em;
+  }
   .box {
     border: 1px solid var(--gray-800);
     border-radius: 0.75rem;
