@@ -343,7 +343,7 @@ h5 {
 article.react-activity-calendar.styles-module_container__GBNxC {
   display: flex;
   margin-top: 2em;
-  background-color: var(--react-activity-calendar-loading-active)
+  background-color: var(--react-activity-calendar-loading-active);
   color: #fff;
   padding: 2em;
   border-radius: 12px;
