@@ -11,6 +11,7 @@ import Hero from "../components/Hero.astro";
 import Icon from "../components/Icon.astro";
 import Pill from "../components/Pill.astro";
 import PortfolioPreview from "../components/PortfolioPreview.astro";
+import GitHubCalendar from "react-github-calendar";
 
 // Page section components
 import ContactCTA from "../components/ContactCTA.astro";
@@ -64,7 +65,7 @@ const projects = (await getCollection("work"))
           src="/assets/headshot.jpg"
         />
       </header>
-
+      <GitHubCalendar client:only username="rileysklar" />
       <Skills />
     </div>
 

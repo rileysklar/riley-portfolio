@@ -340,5 +340,8 @@ h5 {
   }
 }
 
-.todo-item {
+article.react-activity-calendar.styles-module_container__GBNxC {
+  display: flex;
+  max-width: 80%;
+  margin-top: 2em;
 }
