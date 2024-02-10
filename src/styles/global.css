@@ -339,9 +339,33 @@ h5 {
     color: var(--gray-999);
   }
 }
-
+/* THIS BLOCK OF STYLE PERTAINS TO GITHUB CALENDAR  */
 article.react-activity-calendar.styles-module_container__GBNxC {
   display: flex;
-  max-width: 80%;
   margin-top: 2em;
+  background-color: var(--react-activity-calendar-loading-active)
+  color: #fff;
+  padding: 2em;
+  border-radius: 12px;
+  align-items: center;
 }
+
+.react-activity-calendar__scroll-container.styles-module_scrollContainer__-bJC8 {
+  padding-top: 10px;
+}
+
+.styles-module_legendColors__kFY2e {
+  margin-left: 0;
+}
+
+.styles-module_footer__ZQ-Bl {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 16px;
+  white-space: nowrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-content: center;
+}
+/* END THIS BLOCK OF STYLE PERTAINS TO GITHUB CALENDAR  */
