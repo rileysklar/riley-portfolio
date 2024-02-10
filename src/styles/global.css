@@ -368,4 +368,20 @@ article.react-activity-calendar.styles-module_container__GBNxC {
   flex-direction: column;
   align-content: center;
 }
+
+.calendar-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+a.github-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5em;
+
+  h4 {
+    font-size: 1em;
+  }
+}
 /* END THIS BLOCK OF STYLE PERTAINS TO GITHUB CALENDAR  */

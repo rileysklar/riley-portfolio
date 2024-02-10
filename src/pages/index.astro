@@ -3,7 +3,9 @@ import { getCollection } from "astro:content";
 
 // Layout import — provides basic page elements: <head>, <nav>, <footer> etc.
 import BaseLayout from "../layouts/BaseLayout.astro";
-
+import Icon from "./Icon.astro";
+import ThemeToggle from "./ThemeToggle.astro";
+import type { iconPaths } from "./IconPaths";
 // Component Imports
 import CallToAction from "../components/CallToAction.astro";
 import Grid from "../components/Grid.astro";
@@ -66,6 +68,16 @@ const projects = (await getCollection("work"))
         />
       </header>
       <div class="calendar-wrapper">
+        <a
+          href="https://github.com/rileysklar"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="github-link"
+        >
+          <Icon icon="github-logo" />
+          <h4>GitHub Repo</h4>
+        </a>
+
         <GitHubCalendar client:only username="rileysklar" />
       </div>
       <Skills />
