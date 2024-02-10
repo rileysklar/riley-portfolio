@@ -65,7 +65,9 @@ const projects = (await getCollection("work"))
           src="/assets/headshot.jpg"
         />
       </header>
-      <GitHubCalendar client:only username="rileysklar" />
+      <div class="calendar-wrapper">
+        <GitHubCalendar client:only username="rileysklar" />
+      </div>
       <Skills />
     </div>
 
