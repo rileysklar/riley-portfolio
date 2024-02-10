@@ -342,7 +342,7 @@ h5 {
 /* THIS BLOCK OF STYLE PERTAINS TO GITHUB CALENDAR  */
 article.react-activity-calendar.styles-module_container__GBNxC {
   display: flex;
-  margin-top: 2em;
+  margin-top: 1em;
   background-color: var(--react-activity-calendar-loading-active);
   color: #fff;
   padding: 2em;
@@ -372,6 +372,8 @@ article.react-activity-calendar.styles-module_container__GBNxC {
 .calendar-wrapper {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 a.github-link {
