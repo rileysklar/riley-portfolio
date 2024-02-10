@@ -1,30 +1,31 @@
-# Astro Starter Kit: Portfolio
+# Riley Sklar - Software Developer Portfolio 🚀
 
-```sh
-npm create astro@latest -- --template portfolio
-```
+![Riley Sklar](https://rileysklar.netlify.app/assets/headshot.jpg)
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/portfolio)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/portfolio)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/portfolio/devcontainer.json)
+Welcome to my professional portfolio, built with [Astro](https://astro.build/) 🌌, the all-in-one web development platform that leverages the best of modern web technologies for a stellar performance.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## About Astro 🛠
 
-![portfolio](https://rileysklar.netlify.app/assets/headshot.jpg)
+Astro is a cutting-edge framework designed for building fast, scalable, and interactive websites 🌐. It allows developers to use their favorite UI frameworks (like React, Vue, or Svelte) on a per-component basis, optimizing end-user experience with minimal client-side JavaScript.
 
-## 🧞 Commands
+## Why I Chose Astro 🌟
 
-All commands are run from the root of the project, from a terminal:
+I chose Astro for my portfolio to showcase my commitment to innovative technology that prioritizes performance and user experience 🚀. Astro's build process aligns with my goal to present my work effectively and accessibly, demonstrating the power of modern web development.
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+## About Me 👨‍💻
 
-## 👀 Want to learn more?
+As a passionate software developer from Austin, Texas, I specialize in UI/UX design and functionality, creating adaptable web applications and mobile products. My technology stack includes:
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- **JavaScript/TypeScript:** For robust client and server-side logic
+- **React/Next.js:** For dynamic user interfaces and server-side rendering
+- **Vue.js/Astro:** For progressive web apps and static site generation
+- **Node.js:** For scalable backend services
+- **Figma & Adobe Creative Suite:** For design prototyping and graphics
+- **Tailwind CSS:** For responsive and maintainable styling
+- **WordPress/Craft CMS:** For content management and SEO optimization
+
+Through my portfolio, I invite you to explore my journey, expertise, and the unique perspectives I bring to software development 🌈.
+
+Thank you for visiting! Let's connect and create impactful solutions together.
+
+[GitHub](https://github.com/rileysklar) | [LinkedIn](https://www.linkedin.com/in/rileysklar)
