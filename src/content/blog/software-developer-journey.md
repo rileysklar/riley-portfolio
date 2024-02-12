@@ -26,11 +26,11 @@ One of the defining moments of my career was securing a contract with Apple as a
 
 ### Expanding Horizons: Agency Life and Learning JavaScript, React, and PHP
 
-After my stint with Apple, I joined an agency, broadening my technical skill set. It was here that I delved into JavaScript, React, and PHP. Agency work provided a fast-paced environment where I could apply my knowledge in real-world projects, further solidifying my understanding of web development and the importance of teamwork in creating complex digital solutions.
+After my stint with Apple, I joined an agency, broadening my technical skill set. It was here that I delved into JavaScript, React, and PHP. Agency work provides a fast-paced environment where I could apply my knowledge in real-world projects, further solidifying my understanding of web development and the importance of teamwork in creating complex digital solutions.
 
 ### On the Side: Vue.js, React Native, Flutter, and Beyond
 
-Continuing my journey, I began exploring Vue.js, React Native, and Flutter on the side. These technologies opened up new avenues for me in mobile and web application development, allowing me to create more dynamic and interactive user experiences. My goal of becoming a software developer is now within reach, as I continue to learn and apply these advanced frameworks and languages.
+Continuing my journey, I began exploring Vue.js, React Native, and Flutter on the side. These technologies opened up new avenues for me in mobile and web application development, allowing me to create more dynamic and interactive user experiences.
 
 ### The Unending Path of Learning
 
