@@ -80,15 +80,15 @@ const projects = (await getCollection("work"))
 
         <GitHubCalendar client:only username="rileysklar" />
         <script>
-          document.addEventListener("DOMContentLoaded", (event) => {
-            // Use querySelector to select the element by class name
+          window.onload = () => {
             const container = document.querySelector(
               ".react-activity-calendar__scroll-container.styles-module_scrollContainer__-bJC8"
             );
             if (container) {
-              container.scrollLeft = container.scrollWidth;
+              container.scrollLeft =
+                container.scrollWidth - container.clientWidth;
             }
-          });
+          };
         </script>
       </div>
       <Skills />
