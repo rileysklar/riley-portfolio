@@ -19,19 +19,28 @@ import GitHubCalendar from "react-github-calendar";
 import ContactCTA from "../components/ContactCTA.astro";
 import Skills from "../components/Skills.astro";
 
-const selectLastHalfYear = (contributions) => {
-  const currentYear = new Date().getFullYear();
-  const currentMonth = new Date().getMonth();
+const selectLastSixMonths = (contributions) => {
+  const currentDate = new Date();
+  const currentYear = currentDate.getFullYear();
+  const currentMonth = currentDate.getMonth();
   const shownMonths = 6;
+
+  // Calculate the starting month
+  const startingMonth = (currentMonth - shownMonths + 12) % 12;
 
   return contributions.filter((activity) => {
     const date = new Date(activity.date);
-    const monthOfDay = date.getMonth();
+    const activityMonth = date.getMonth();
+    const activityYear = date.getFullYear();
 
+    // Check if the activity's date falls within the last 6 months
     return (
-      date.getFullYear() === currentYear &&
-      monthOfDay > currentMonth - shownMonths &&
-      monthOfDay <= currentMonth
+      (activityYear === currentYear &&
+        activityMonth >= startingMonth &&
+        activityMonth <= currentMonth) ||
+      (activityYear === currentYear - 1 &&
+        activityMonth >= startingMonth &&
+        activityMonth <= currentMonth + 12) // Wrap around to previous year
     );
   });
 };
@@ -98,7 +107,7 @@ const projects = (await getCollection("work"))
         <GitHubCalendar
           client:only
           username="rileysklar"
-          transformData={selectLastHalfYear}
+          transformData={selectLastSixMonths}
           labels={{
             totalCount: "{{count}} contributions in the last half year",
           }}
