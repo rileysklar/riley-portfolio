@@ -77,33 +77,8 @@ const projects = (await getCollection("work"))
           <Icon icon="github-logo" />
           <h4>GitHub Repo</h4>
         </a>
-        <script>
-          const selectLastHalfYear = (contributions) => {
-            const currentYear = new Date().getFullYear();
-            const currentMonth = new Date().getMonth();
-            const shownMonths = 6;
 
-            return contributions.filter((activity) => {
-              const date = new Date(activity.date);
-              const monthOfDay = date.getMonth();
-
-              return (
-                date.getFullYear() === currentYear &&
-                monthOfDay > currentMonth - shownMonths &&
-                monthOfDay <= currentMonth
-              );
-            });
-          };
-        </script>
-
-        <GitHubCalendar
-          username="rileysklar"
-          transformData={selectLastHalfYear}
-          hideColorLegend
-          labels={{
-            totalCount: "{{count}} contributions in the last half year",
-          }}
-        />
+        <GitHubCalendar client:only username="rileysklar" />
       </div>
       <Skills />
     </div>
