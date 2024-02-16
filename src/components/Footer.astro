@@ -4,70 +4,72 @@ const currentYear = new Date().getFullYear();
 ---
 
 <footer>
-  <div class="group">
-    <div class="flex flex-col justify-center sm:flex-row gap-y-2">
-      <span>
-        Built with <strong>
-          <a
-            class="group transition-all duration-300 ease-in-out relative pl-1 hover:text-bg z-20"
-            href="https://astro.build/"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            Astro 🚀
-          </a>
-        </strong>
-        <span class="mx-2 sm:inline hidden">|</span>
-      </span>
-      <span>
-        Styling with <strong>
-          <a
-            class="group transition-all duration-300 ease-in-out relative pl-1 hover:text-bg z-20"
-            href="https://tailwindcss.com/"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            Tailwind CSS<span
-              class="absolute left-0 -bottom-0 w-full h-0.5 bg-brand -z-10 group-hover:h-full group-hover:transition-all rounded-sm"
-            ></span>
-          </a>
-        </strong>
-        <span class="mx-2 sm:inline hidden">|</span>
-      </span>
-      <span>
-        Hosted on <strong>
-          <a
-            class="group transition-all duration-300 ease-in-out relative pl-1 hover:text-bg z-20"
-            href="https://netlify.com/"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            Netlify<span
-              class="absolute left-0 -bottom-0 w-full h-0.5 bg-brand -z-10 group-hover:h-full group-hover:transition-all rounded-sm"
-            ></span>
-          </a>
-        </strong><span class="mx-2 sm:inline hidden">|</span>
-      </span>
+  <div class="footer-top">
+    <div class="group">
+      <div class="flex flex-col justify-center sm:flex-row gap-y-2">
+        <span>
+          Built with <strong>
+            <a
+              class="group transition-all duration-300 ease-in-out relative pl-1 hover:text-bg z-20"
+              href="https://astro.build/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Astro 🚀
+            </a>
+          </strong>
+          <span class="mx-2 sm:inline hidden">|</span>
+        </span>
+        <span>
+          Styled with <strong>
+            <a
+              class="group transition-all duration-300 ease-in-out relative pl-1 hover:text-bg z-20"
+              href="https://tailwindcss.com/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Tailwind CSS<span
+                class="absolute left-0 -bottom-0 w-full h-0.5 bg-brand -z-10 group-hover:h-full group-hover:transition-all rounded-sm"
+              ></span>
+            </a>
+          </strong>
+          <span class="mx-2 sm:inline hidden">|</span>
+        </span>
+        <span>
+          Hosted on <strong>
+            <a
+              class="group transition-all duration-300 ease-in-out relative pl-1 hover:text-bg z-20"
+              href="https://netlify.com/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Netlify<span
+                class="absolute left-0 -bottom-0 w-full h-0.5 bg-brand -z-10 group-hover:h-full group-hover:transition-all rounded-sm"
+              ></span>
+            </a>
+          </strong>
+        </span>
+      </div>
+      <p class="socials">
+        <a href="https://www.showwcase.com/rileysklar"> Resume</a>
+        <a href="https://www.linkedin.com/in/rileysklar/"> LinkedIn</a>
+        <a href="https://github.com/rileysklar"> GitHub</a>
+        <a href="https://twitter.com/rileysklar"> Twitter</a>
+        <a href="https://codepen.io/rileyshake"> CodePen</a>
+      </p>
     </div>
-    <p>
-      &copy; {currentYear}
-      <a href="https://rileysklar.com/"> Riley Sklar</a>
-    </p>
   </div>
 
-  <p class="socials">
-    <a href="https://www.showwcase.com/rileysklar"> Resume</a>
-    <a href="https://www.linkedin.com/in/rileysklar/"> LinkedIn</a>
-    <a href="https://github.com/rileysklar"> GitHub</a>
-    <a href="https://twitter.com/rileysklar"> Twitter</a>
-    <a href="https://codepen.io/rileyshake"> CodePen</a>
-  </p>
+  <div class="copyright">
+    &copy; {currentYear}
+    <a href="https://rileysklar.com/"> Riley Sklar</a>
+  </div>
 </footer>
 <style>
   footer {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 1rem;
     margin-top: auto;
     padding: 3rem 2rem 3rem;
     text-align: center;
@@ -92,6 +94,7 @@ const currentYear = new Date().getFullYear();
   .group {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 0.5rem;
   }
 
@@ -107,7 +110,7 @@ const currentYear = new Date().getFullYear();
   .socials {
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 0.5rem;
     flex-wrap: wrap;
   }
 
@@ -117,7 +120,7 @@ const currentYear = new Date().getFullYear();
 
   @media (min-width: 50em) {
     footer {
-      flex-direction: row;
+      flex-direction: column;
       justify-content: space-between;
       padding: 2.5rem 5rem;
     }
