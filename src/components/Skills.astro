@@ -11,7 +11,7 @@ import Icon from "./Icon.astro";
         size="2.5rem"
         gradient
       />
-      <h2>Full Stack</h2>
+      <h2>Agile Software Developer</h2>
       <p>
         Adaptable skills for diverse projects and rapid mastery of new
         technologies and languages as required. Proficient in various
@@ -49,11 +49,25 @@ import Icon from "./Icon.astro";
       </p>
     </div>
   </section>
-  <p class="skills-list">
-    <strong>Technologies:</strong> JavaScript, Astro, React, Node.js, Vue.js, Shopify,
-    Liquid, HTML5, CSS, Tailwind, SCSS, jQuery, PHP, XML, Python, WordPress, GitHub,
-    Supabase, AWS, VS Code, Figma
-  </p>
+  <div class="tag-bubble">
+    <div class="tagGIS">JavaScript</div>
+    <div class="tagGIS">React</div>
+    <div class="tagGIS">Astro</div>
+    <div class="tagGIS">Tailwind CSS</div>
+    <div class="tagGIS">CSS</div>
+    <div class="tagGIS">PHP</div>
+    <div class="tagGIS">UI/UX Design</div>
+    <div class="tagGIS">Figma</div>
+    <div class="tagGIS">Next JS</div>
+    <div class="tagGIS">XML</div>
+    <div class="tagGIS">HTML5</div>
+    <div class="tagGIS">VS Code</div>
+    <div class="tagGIS">WordPress</div>
+    <div class="tagGIS">Craft CMS</div>
+    <div class="tagGIS">WP Engine</div>
+    <div class="tagGIS">AWS</div>
+    <div class="tagGIS">Shopify & Liquid</div>
+  </div>
 </div>
 <style>
   .skills-list {
@@ -79,6 +93,24 @@ import Icon from "./Icon.astro";
 
   .skills p {
     color: var(--gray-400);
+  }
+
+  .tag-bubble {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+    overflow-wrap: break-word;
+    flex-wrap: wrap;
+    text-wrap: balance;
+    padding-top: 3em;
+  }
+
+  .tagGIS {
+    background-color: var(--gray-900);
+    border-radius: 100em;
+    padding: 0.25em 1em;
+    font-size: 1em;
+    color: var(--gray-50);
   }
 
   @media (min-width: 50em) {
