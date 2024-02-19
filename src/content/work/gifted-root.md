@@ -10,7 +10,7 @@ tags:
   - eComm Dev
 ---
 
-<a href="https://giftedroot.com/">Visit the Gifted Root Shopify site</a>
+<a href="https://giftedroot.com/" class="live-button">Visit the Gifted Root Shopify site</a>
 
 > Building a Brand-Driven E-commerce Experience: The Story of Gifted Root
 
