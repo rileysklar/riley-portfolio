@@ -7,7 +7,8 @@ import ContactCTA from "../components/ContactCTA.astro";
 import PortfolioPreview from "../components/PortfolioPreview.astro";
 import Hero from "../components/Hero.astro";
 import Grid from "../components/Grid.astro";
-
+import GitHubCalendar from "react-github-calendar";
+import Icon from "../components/Icon.astro";
 const projects = (await getCollection("work")).sort(
   (a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf()
 );
@@ -24,6 +25,19 @@ const projects = (await getCollection("work")).sort(
         tagline="See my most recent agency work below from a variety of tech stacks and a diversity of client needs."
         align="start"
       />
+      <div class="calendar-wrapper">
+        <a
+          href="https://github.com/rileysklar"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="github-link"
+        >
+          <Icon icon="github-logo" />
+          <h4>GitHub Repo</h4>
+        </a>
+
+        <GitHubCalendar client:only username="rileysklar" />
+      </div>
       <Grid variant="offset">
         {
           projects.map((project) => (
