@@ -7,8 +7,14 @@ import ContactCTA from "../components/ContactCTA.astro";
 import PortfolioPreview from "../components/PortfolioPreview.astro";
 import Hero from "../components/Hero.astro";
 import Grid from "../components/Grid.astro";
+<<<<<<< HEAD
 import GitHubCalendar from "react-github-calendar";
 import Icon from "../components/Icon.astro";
+=======
+import Icon from "../components/Icon.astro";
+import GitHubCalendar from "react-github-calendar";
+
+>>>>>>> 0254d1936f41fb73a107d257bdbf0e7ac8f64215
 const projects = (await getCollection("work")).sort(
   (a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf()
 );
