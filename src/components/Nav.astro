@@ -65,13 +65,7 @@ const iconLinks: {
 <nav>
   <div class="menu-header">
     <a href="/" class="site-title">
-      <Icon
-        icon="terminal-window"
-        color="var(--accent-regular)"
-        size="1.6em"
-        gradient
-      />
-
+      <Icon icon="code" color="var(--accent-regular)" size="1.6em" gradient />
       Riley Sklar
     </a>
     <menu-button>
@@ -223,6 +217,7 @@ const iconLinks: {
     line-height: 1.1;
     color: var(--gray-0);
     text-decoration: none;
+    font-size: 1.5em;
   }
 
   .menu-button {
@@ -232,15 +227,15 @@ const iconLinks: {
     border-radius: 999rem;
     padding: 0.5rem;
     font-size: 1.5rem;
-    color: var(--gray-300);
-    background: radial-gradient(var(--gray-900), var(--gray-800) 150%);
-    box-shadow: var(--shadow-md);
+    /* background: radial-gradient(var(--accent-900), var(--gray-800) 150%); */
+    /* box-shadow: var(--shadow-md); */
+    color: var(--accent-dark);
   }
 
   .menu-button[aria-expanded="true"] {
-    color: var(--gray-0);
-    background: linear-gradient(180deg, var(--gray-600), transparent),
-      radial-gradient(var(--gray-900), var(--gray-800) 150%);
+    color: var(--accent-light);
+    /* background: linear-gradient(180deg, var(--gray-600), transparent),
+      radial-gradient(var(--gray-900), var(--gray-800) 150%); */
   }
 
   .menu-button[hidden] {
@@ -251,7 +246,7 @@ const iconLinks: {
     position: absolute;
     inset: -1px;
     content: "";
-    background: var(--gradient-stroke);
+    /* background: var(--gradient-stroke); */
     border-radius: 999rem;
     z-index: -1;
   }
