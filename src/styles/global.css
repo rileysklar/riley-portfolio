@@ -18,7 +18,7 @@
   --gray-900: #f3f4f7;
   --gray-999-basis: 0, 0%, 100%;
   --gray-999_40: hsla(var(--gray-999-basis), 0.4);
-  --gray-999: #f5f5f5;
+  --gray-999: #ffffff;
 
   --accent-light: #a0e775;
   --accent-regular: #4caf50;
@@ -85,7 +85,7 @@
 }
 
 :root.theme-dark {
-  --gray-0: #f5f5f5;
+  --gray-0: #ffffff;
   --gray-50: #f3f4f7;
   --gray-100: #e3e6ee;
   --gray-200: #c3cadb;
@@ -100,7 +100,7 @@
   --gray-999: #090b11;
 
   --accent-light: #006837;
-  --accent-regular: #68dd6c;
+  --accent-regular: #4caf50;
   --accent-dark: #4ec34a;
   --accent-overlay: hsla(123, 53%, 55%, 0.33);
   --accent-subtle-overlay: hsla(
