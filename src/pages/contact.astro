@@ -1,0 +1,27 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import supabase from "../components/lib/supabase";
+import Hero from "../components/Hero.astro";
+import ContactForm from "../components/ContactForm";
+---
+
+<BaseLayout
+  title="Contact"
+  description="Front End Developer and UI Designer | Austin, Texas"
+>
+  <main class="stack gap-10">
+    <div class="wrapper about">
+      <Hero
+        title="Contact Me"
+        tagline="Reach out and let me if you'd like to collaborate, compliment me or talk sh*t to me!"
+      />
+      <div class="form"><ContactForm client:load /></div>
+    </div>
+  </main>
+</BaseLayout>
+
+<style>
+  .about {
+    gap: 0;
+  }
+</style>
