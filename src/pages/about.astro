@@ -240,10 +240,6 @@ import Hero from "../components/Hero.astro";
       gap: 3.5rem;
     }
 
-    /* h5 {
-      padding-top: 1em;
-    } */
-
     .content {
       padding: 2em;
       background-color: var(--gray-900);
@@ -261,10 +257,6 @@ import Hero from "../components/Hero.astro";
       flex-direction: column;
       gap: 0.5rem;
       color: var(--gray-200);
-    }
-
-    .content h5 {
-      font-size: var(--text-lg);
     }
 
     .section-title {
@@ -320,6 +312,10 @@ import Hero from "../components/Hero.astro";
       .about {
         display: grid;
         grid-template-columns: 1fr 60% 1fr;
+      }
+
+      .content h5 {
+        font-size: var(--text-2xl);
       }
 
       .about > :global(:first-child) {
