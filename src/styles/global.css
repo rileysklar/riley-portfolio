@@ -203,6 +203,10 @@ h5 {
   font-size: var(--text-xl);
 }
 
+.faq {
+  padding-bottom: 16px;
+}
+
 /* Utilities */
 
 .sr-only {
@@ -255,6 +259,9 @@ h5 {
 }
 
 @media (min-width: 50em) {
+  .faq {
+    text-align: left;
+  }
   .lg\:gap-2 {
     gap: 0.5rem;
   }

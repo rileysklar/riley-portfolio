@@ -24,7 +24,7 @@ import Hero from "../components/Hero.astro";
       </Hero>
 
       <section>
-        <h2 class="section-title">Background</h2>
+        <h2 class="section-title">🔮 Background</h2>
         <div class="content">
           <p>
             As a developer working at a dynamic agency, I find myself at the
@@ -53,7 +53,7 @@ import Hero from "../components/Hero.astro";
         </div>
       </section>
       <section>
-        <h3 class="section-title">Experience</h3>
+        <h3 class="section-title">💻 Experience</h3>
         <div class="content">
           <h5>ShakeWell Creative</h5>
           <p class="job-title">
@@ -61,26 +61,139 @@ import Hero from "../components/Hero.astro";
           </p>
           <p class="duration">Sep 2022 - Present</p>
           <p class="location">Austin, Texas, United States</p>
+          <ul>
+            <li>
+              Led a team to deliver web applications for various clients,
+              including Fortune 500 companies and state government agencies.
+            </li>
+            <li>
+              Managed client relations, site architecture, and tech stack
+              selection.
+            </li>
+            <li>
+              Skills: JavaScript, React.js, CSS, Figma, UI Design, Vue.js, React
+              Native, Full-Stack Development.
+            </li>
+          </ul>
         </div>
         <div class="content">
           <h5>Hero Digital</h5>
-
-          <p class="job-title"><strong>Lead Production Designer </strong></p>
-          <p class="job-title">Apple UI/UX Mobile Product Design Contract</p>
-          <p class="duration">July 2022 - September 2022</p>
-          <p class="location">Austin, Texas, United States</p>
+          <p class="job-title">
+            <strong>Lead Production Designer</strong>
+          </p>
+          <p class="duration">Jul 2022 - Sep 2022</p>
+          <p class="location">Austin, Texas</p>
+          <ul>
+            <li>
+              Developed a high-fidelity prototype for an undisclosed software
+              project.
+            </li>
+            <li>
+              Skills: Visual Design, Adobe Creative Suite, Figma, Responsive Web
+              Design.
+            </li>
+          </ul>
         </div>
-      </section>
-      <section>
-        <h3 class="section-title">Education</h3>
         <div class="content">
-          <h5>Texas A&M University</h5>
-          <p class="job-title">2008-2012</p>
-          <p class="job-title">BA International Studies, Minor in Spanish</p>
+          <h5>DoStuff</h5>
+          <p class="job-title">
+            <strong>Project Manager</strong>
+          </p>
+          <p class="duration">Jun 2022 - Sep 2022</p>
+          <p class="location">Austin, Texas, United States</p>
+          <ul>
+            <li>Managed content creators for promotional activities.</li>
+          </ul>
+        </div>
+        <div class="content">
+          <h5>Creative Services, Inc.</h5>
+          <p class="job-title">
+            <strong>Digital Marketing Manager</strong>
+          </p>
+          <p class="duration">Sep 2020 - Jul 2022</p>
+          <p class="location">Austin, Texas, United States</p>
+          <ul>
+            <li>Designed website UI and managed website development.</li>
+            <li>Implemented automated marketing campaigns in HubSpot.</li>
+          </ul>
+        </div>
+        <div class="content">
+          <h5>KEI Abroad</h5>
+          <p class="job-title">
+            <strong>Senior Regional Manager</strong>
+          </p>
+          <p class="duration">Sep 2017 - Apr 2020</p>
+          <p class="location">Austin, Texas Area</p>
+          <ul>
+            <li>
+              Facilitated student enrollment in study abroad programs across
+              Spain, Thailand, and Costa Rica.
+            </li>
+            <li>
+              Expanded organization's global presence and fostered international
+              educational opportunities.
+            </li>
+          </ul>
+        </div>
+        <div class="content">
+          <h5>SHI International Corp.</h5>
+          <p class="job-title">
+            <strong>Inside Account Executive</strong>
+          </p>
+          <p class="duration">Jan 2014 - Jun 2014</p>
+          <p class="location">Austin, Texas</p>
+          <ul>
+            <li>
+              Exceeded sales targets through effective prospecting strategies.
+            </li>
+            <li>
+              Managed sales pipeline and customer relationships to drive revenue
+              growth.
+            </li>
+          </ul>
+        </div>
+        <div class="content">
+          <h5>Centre d'Aprenentatge Empresarial</h5>
+          <p class="job-title">
+            <strong>English Language Instructor</strong>
+          </p>
+          <p class="duration">Sep 2013 - Nov 2013</p>
+          <p class="location">Catalunya, Spain</p>
+          <ul>
+            <li>Taught English language to professionals at various levels.</li>
+          </ul>
+        </div>
+        <div class="content">
+          <h5>Diversity Abroad</h5>
+          <p class="job-title">
+            <strong>Global Education Representative</strong>
+          </p>
+          <p class="duration">Aug 2012 - Jul 2013</p>
+          <p class="location">Berkeley, California</p>
+          <ul>
+            <li>
+              Promoted global education access and diversity in study abroad
+              programs.
+            </li>
+          </ul>
+        </div>
+        <div class="content">
+          <h5>AmCham Costa Rica</h5>
+          <p class="job-title">
+            <strong>Marketing Intern</strong>
+          </p>
+          <p class="duration">May 2011 - Aug 2011</p>
+          <p class="location">San José, Costa Rica</p>
+          <ul>
+            <li>
+              Contributed to bilingual marketing campaigns targeting
+              multinational companies.
+            </li>
+          </ul>
         </div>
       </section>
       <section>
-        <h2 class="section-title">Skills</h2>
+        <h2 class="section-title">🔨 Skills</h2>
         <div class="tag-bubble">
           <div class="tagGIS">JavaScript</div>
           <div class="tagGIS">React</div>
@@ -127,8 +240,14 @@ import Hero from "../components/Hero.astro";
       gap: 3.5rem;
     }
 
-    h5 {
+    /* h5 {
       padding-top: 1em;
+    } */
+
+    .content {
+      padding: 2em;
+      background-color: var(--gray-900);
+      border-radius: 20px;
     }
 
     img {
@@ -187,6 +306,14 @@ import Hero from "../components/Hero.astro";
       padding: 0.25em 1em;
       font-size: 1em;
       color: var(--gray-50);
+    }
+
+    li {
+      list-style: circle;
+      font-size: 0.75em;
+      text-wrap: pretty;
+      margin-left: 3em;
+      line-height: 2;
     }
 
     @media (min-width: 50em) {
