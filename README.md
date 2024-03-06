@@ -1,4 +1,4 @@
-# Riley Sklar - Software Developer Portfolio 🚀
+# Riley Sklar - Front End Developer Portfolio 🚀
 
 ![Riley Sklar](https://rileysklar.netlify.app/assets/headshot.jpg)
 
@@ -14,7 +14,7 @@ I chose Astro for my portfolio to showcase my commitment to innovative technolog
 
 ## About Me 👨‍💻
 
-As a passionate software developer from Austin, Texas, I specialize in UI/UX design and functionality, creating adaptable web applications and mobile products. My technology stack includes:
+As a passionate front end developer from Austin, Texas, I specialize in UI/UX design and functionality, creating adaptable web applications and mobile products. My technology stack includes:
 
 - **JavaScript/TypeScript:** For robust client and server-side logic
 - **React/Next.js:** For dynamic user interfaces and server-side rendering
@@ -24,7 +24,7 @@ As a passionate software developer from Austin, Texas, I specialize in UI/UX des
 - **Tailwind CSS:** For responsive and maintainable styling
 - **WordPress/Craft CMS:** For content management and SEO optimization
 
-Through my portfolio, I invite you to explore my journey, expertise, and the unique perspectives I bring to software development 🌈.
+Through my portfolio, I invite you to explore my journey, expertise, and the unique perspectives I bring to front end development 🌈.
 
 Thank you for visiting! Let's connect and create impactful solutions together.
 

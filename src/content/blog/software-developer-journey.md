@@ -1,5 +1,5 @@
 ---
-title: A Journey Unfolded — Shaping the Future as a Self-Taught Software Developer
+title: A Journey Unfolded — Shaping the Future as a Self-Taught Front End Developer
 publishDate: 2024-02-12 00:00:00
 img: /assets/developer-journey.jpg
 img_alt: A developer's journey from basics to breakthroughs
@@ -7,7 +7,7 @@ description: The path of a self-taught developer reveals the limitless potential
 tags:
   - Self-Taught Journey
   - UI/UX Design
-  - Software Development
+  - Front End Development
 ---
 
 The journey of becoming a developer is as diverse as it is challenging, especially for those who take the self-taught route. My adventure began with the basics of CSS and HTML, laying the groundwork for what would become a career filled with growth, opportunities, and continuous learning.
