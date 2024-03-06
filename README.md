@@ -1,6 +1,8 @@
 # Riley Sklar - Front End Developer Portfolio 🚀
 
-![Riley Sklar](https://rileysklar.netlify.app/assets/headshot.jpg)
+<img src="https://rileysklar.netlify.app/assets/social-preview.png" alt="Riley Sklar" width="400"/>
+
+Visit the live site [here](https://rileysklar.io).
 
 Welcome to my professional portfolio, built with [Astro](https://astro.build/) 🌌, the all-in-one web development platform that leverages the best of modern web technologies for a stellar performance.
 
