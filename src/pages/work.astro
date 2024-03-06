@@ -44,19 +44,7 @@ const faqs = [
         tagline="See my most recent agency work below from a variety of tech stacks and a diversity of client needs."
         align="start"
       />
-      <div class="calendar-wrapper">
-        <a
-          href="https://github.com/rileysklar"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="github-link"
-        >
-          <Icon icon="github-logo" />
-          <h4>GitHub Repo</h4>
-        </a>
 
-        <GitHubCalendar client:only username="rileysklar" />
-      </div>
       <Grid variant="offset">
         {
           projects.map((project) => (
@@ -71,6 +59,19 @@ const faqs = [
           <h3 class="faq">📋 FAQ</h3>
         </div>
         <Accordion client:only data={faqs} />
+      </div>
+      <div class="calendar-wrapper">
+        <a
+          href="https://github.com/rileysklar"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="github-link"
+        >
+          <Icon icon="github-logo" />
+          <h4>GitHub Repo</h4>
+        </a>
+
+        <GitHubCalendar client:only username="rileysklar" />
       </div>
     </main>
     <ContactCTA />
