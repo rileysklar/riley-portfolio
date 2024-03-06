@@ -1,6 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-
+import { ExperienceList } from "../components/Experience";
 import ContactCTA from "../components/ContactCTA.astro";
 import Hero from "../components/Hero.astro";
 ---
@@ -27,8 +27,7 @@ import Hero from "../components/Hero.astro";
         <h2 class="section-title">🔮 Background</h2>
         <div class="content">
           <p>
-            As a developer working at a dynamic agency, I find myself at the
-            crossroads of innovation and diversity, managing a wide range of
+            As a developer working at a dynamic agency I manage a wide range of
             client projects that span various industries. My attention to detail
             is not just a skill—it's a part of who I am, allowing me to tailor
             solutions that not only meet but exceed our clients' expectations.
@@ -40,13 +39,13 @@ import Hero from "../components/Hero.astro";
           </p><br />
           <p>
             Self-taught and driven by an innate curiosity, I've cultivated a
-            comprehensive skill set that enables me to navigate the complexities
-            of digital development with humble curiosity. My passion for
-            technology is matched by my ability to lead teams with empathy and
-            insight, fostering an environment where creativity and innovation
-            thrive. Outside of work, my life is equally vibrant. My fiancée, is
-            a constant source of support and inspiration. This balance between
-            my professional aspirations, personal interests, and the simple
+            skill set that enables me to navigate the complexities of digital
+            development with humble curiosity. My passion for technology is
+            matched by my ability to lead teams with empathy and insight,
+            fostering an environment where creativity and innovation thrive.
+            Outside of work, my life is equally vibrant. My fiancée, is a
+            constant source of support and inspiration. This balance between my
+            professional aspirations, personal interests, and the simple
             pleasures of life — such as spending time with my poodle, Tico —
             have shaped me into the well-rounded individual I am today.
           </p>
@@ -54,139 +53,7 @@ import Hero from "../components/Hero.astro";
       </section>
       <section>
         <h3 class="section-title">💻 Experience</h3>
-        <div class="content">
-          <h5>ShakeWell Creative</h5>
-          <p class="job-title">
-            <strong>Lead Web Developer & UI/UX Designer</strong>
-          </p>
-          <p class="duration">Sep 2022 - Present</p>
-          <p class="location">Austin, Texas, USA</p>
-          <ul>
-            <li>
-              I lead a small team to deliver web applications for various
-              clients, including Fortune 500 companies and state government
-              agencies.
-            </li>
-            <li>
-              I manage client relations, site architecture, and tech stack
-              selection.
-            </li>
-            <li>
-              Skills: JavaScript, React, CSS, Figma, UI Design, Vue.js,
-              WordPress, PHP.
-            </li>
-          </ul>
-        </div>
-        <div class="content">
-          <h5>Hero Digital</h5>
-          <p class="job-title">
-            <strong>Lead Production Designer</strong>
-          </p>
-          <p class="duration">Jul 2022 - Sep 2022</p>
-          <p class="location">Austin, Texas, USA</p>
-          <ul>
-            <li>Contract for Apple </li>
-            <li>Developed a high-fidelity prototype</li>
-            <li>Skills: VizApp Visual Design, Adobe Creative Suite, Figma.</li>
-          </ul>
-        </div>
-        <div class="content">
-          <h5>DoStuff</h5>
-          <p class="job-title">
-            <strong>Project Manager</strong>
-          </p>
-          <p class="duration">Jun 2022 - Sep 2022</p>
-          <p class="location">Austin, Texas, USA</p>
-          <ul>
-            <li>Managed content creators for promotional activities.</li>
-          </ul>
-        </div>
-        <div class="content">
-          <h5>Creative Services, Inc.</h5>
-          <p class="job-title">
-            <strong>Digital Marketing Manager</strong>
-          </p>
-          <p class="duration">Sep 2020 - Jul 2022</p>
-          <p class="location">Austin, Texas, USA</p>
-          <ul>
-            <li>Designed website UI and managed website development.</li>
-            <li>Implemented automated marketing campaigns in HubSpot.</li>
-          </ul>
-        </div>
-        <div class="content">
-          <h5>KEI Abroad</h5>
-          <p class="job-title">
-            <strong>Senior Regional Manager</strong>
-          </p>
-          <p class="duration">Sep 2014 - Apr 2020</p>
-          <p class="location">Austin, Texas, USA</p>
-          <ul>
-            <li>
-              Facilitated student enrollment in study abroad programs across
-              Spain, Thailand, and Costa Rica.
-            </li>
-            <li>
-              Expanded organization's global presence and fostered international
-              educational opportunities.
-            </li>
-          </ul>
-        </div>
-        <div class="content">
-          <h5>SHI International Corp.</h5>
-          <p class="job-title">
-            <strong>Inside Account Executive</strong>
-          </p>
-          <p class="duration">Jan 2014 - Sep 2014</p>
-          <p class="location">Austin, Texas, USA</p>
-          <ul>
-            <li>
-              Exceeded sales targets through effective prospecting strategies.
-            </li>
-            <li>
-              Managed sales pipeline and customer relationships to drive revenue
-              growth.
-            </li>
-          </ul>
-        </div>
-        <div class="content">
-          <h5>Centre d'Aprenentatge Empresarial</h5>
-          <p class="job-title">
-            <strong>English Language Instructor</strong>
-          </p>
-          <p class="duration">Sep 2013 - Nov 2013</p>
-          <p class="location">Lleida, Spain</p>
-          <ul>
-            <li>Taught English language to professionals at various levels.</li>
-          </ul>
-        </div>
-        <div class="content">
-          <h5>Diversity Abroad</h5>
-          <p class="job-title">
-            <strong>Global Education Representative</strong>
-          </p>
-          <p class="duration">Aug 2012 - Jul 2013</p>
-          <p class="location">Berkeley, California</p>
-          <ul>
-            <li>
-              Promoted global education access and diversity in study abroad
-              programs.
-            </li>
-          </ul>
-        </div>
-        <div class="content">
-          <h5>AmCham Costa Rica</h5>
-          <p class="job-title">
-            <strong>Marketing Intern</strong>
-          </p>
-          <p class="duration">May 2011 - Aug 2011</p>
-          <p class="location">San José, Costa Rica</p>
-          <ul>
-            <li>
-              Contributed to bilingual marketing campaigns targeting
-              multinational companies.
-            </li>
-          </ul>
-        </div>
+        <ExperienceList client:load />
       </section>
       <section>
         <h2 class="section-title">🔨 Skills</h2>
@@ -263,7 +130,6 @@ import Hero from "../components/Hero.astro";
     }
 
     .content {
-      grid-column: 2 / 4;
     }
 
     .content :global(a) {
@@ -305,11 +171,6 @@ import Hero from "../components/Hero.astro";
     }
 
     @media (min-width: 50em) {
-      .about {
-        display: grid;
-        grid-template-columns: 1fr 60% 1fr;
-      }
-
       .content h5 {
         font-size: var(--text-2xl);
       }
@@ -325,6 +186,7 @@ import Hero from "../components/Hero.astro";
 
       .section-title {
         text-align: left;
+        font-size: 2.5em;
       }
     }
   </style>
