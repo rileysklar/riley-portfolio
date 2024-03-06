@@ -7,14 +7,12 @@ const education = [
     title: "BA International Studies, Minor in Spanish",
     duration: "2008-2012",
     location: "College Station, Texas, USA",
-    bullets: ["3.1 GPA"],
   },
   {
     company: "Universidad de Costa Rica",
     title: "Study Abroad",
     duration: "2009",
     location: "San José, Costa Rica",
-    bullets: ["Spanish"],
   },
 ];
 
