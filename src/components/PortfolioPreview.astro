@@ -1,5 +1,6 @@
 ---
 import type { CollectionEntry } from "astro:content";
+import "../styles/global.css";
 
 interface Props {
   project: CollectionEntry<"work">;
@@ -8,22 +9,28 @@ interface Props {
 const { data, slug } = Astro.props.project;
 ---
 
-<a class="card" href={`/work/${slug}`}>
-  <span class="title">{data.title}</span>
-  <img
-    src={data.img}
-    alt={data.img_alt || ""}
-    loading="lazy"
-    decoding="async"
-  />
+<a href={`/work/${slug}`}>
+  <div class="card">
+    <img
+      src={data.img}
+      alt={data.img_alt || ""}
+      loading="lazy"
+      decoding="async"
+    /><span class="title">{data.title}</span>
+    <span class="description">{data.description}</span>
+    <div class="tag-bubble">
+      {data.tags.map((tag, index) => <span class="tag-work">{tag}</span>)}
+    </div>
+  </div>
 </a>
 
 <style>
   .card {
-    display: grid;
-    grid-template: auto 1fr / auto 1fr;
-    height: 18rem;
-    background: var(--gradient-subtle);
+    display: flex;
+    flex-direction: column;
+    /* grid-template: auto 1fr / auto 1fr; */
+    /* height: 18rem; */
+    background: var(--gray-900);
     border: 1px solid var(--gray-800);
     border-radius: 0.75rem;
     overflow: hidden;
@@ -36,6 +43,23 @@ const { data, slug } = Astro.props.project;
     margin: 1em;
   }
 
+  .tag-bubble {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+    overflow-wrap: break-word;
+    flex-wrap: wrap;
+    text-wrap: balance;
+    padding: 0 1em 1em 1em;
+    justify-content: flex-start;
+  }
+
+  .description {
+    padding: 0 1em 1em 1em;
+    background-color: transparent;
+    color: var(--gray-50);
+  }
+
   .card:hover {
     box-shadow: var(--shadow-lg);
     transform: scale(1.01);
@@ -43,18 +67,16 @@ const { data, slug } = Astro.props.project;
   }
 
   .title {
-    grid-area: 1 / 1 / 2 / 2;
     z-index: 1;
-    margin: 0.5rem;
     padding: 0.5rem 1rem;
-    background: var(--gray-999);
     color: var(--gray-200);
-    border-radius: 1.375rem;
-    border: solid 0.05em var(--gray-200);
+    font-size: var(--text-lg);
+    text-wrap: pretty;
   }
 
   .title:hover {
     transform: scale(1.02);
+    transition: all ease 0.5s;
   }
 
   img {
@@ -66,7 +88,6 @@ const { data, slug } = Astro.props.project;
 
   @media (min-width: 50em) {
     .card {
-      height: 24rem;
       border-radius: 1.5rem;
     }
 

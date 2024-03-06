@@ -248,7 +248,7 @@ h5 {
   gap: 3.5rem;
 }
 
-.content {
+.experience-list .content {
   padding: 2em;
   background-color: var(--gray-900);
   border-radius: 2em;
@@ -262,12 +262,20 @@ h5 {
 }
 
 .current {
-  height: 3em;
-  width: 3em;
+  height: 1em;
+  width: 100em;
   background-color: #4caf4f4c;
   position: relative;
   top: 40px;
   left: -13%;
+}
+
+.tag-work {
+  background-color: var(--gray-800);
+  border-radius: 100em;
+  padding: 0.25em 1em;
+  font-size: 1em;
+  color: var(--gray-50);
 }
 
 /* Utilities */
@@ -326,13 +334,6 @@ h5 {
     max-width: 360px;
     display: flex;
     flex-direction: column;
-  }
-
-  .current {
-    top: 10%;
-    left: -16%;
-    height: 2em;
-    width: 2em;
   }
 
   .experience-list .faq {
