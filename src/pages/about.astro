@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { ExperienceList } from "../components/Experience";
+import { EducationList } from "../components/Education";
 import ContactCTA from "../components/ContactCTA.astro";
 import Hero from "../components/Hero.astro";
 ---
@@ -54,6 +55,10 @@ import Hero from "../components/Hero.astro";
       <section>
         <h3 class="section-title">💡 Experience</h3>
         <ExperienceList client:load />
+      </section>
+      <section>
+        <h3 class="section-title">🎓 Education</h3>
+        <EducationList client:load />
       </section>
       <section>
         <h2 class="section-title">🔨 Skills</h2>

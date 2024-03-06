@@ -24,7 +24,7 @@ const experiences = [
     ],
   },
   {
-    company: "DoStuff",
+    company: "DoStuff Media",
     title: "⚙️ Project Manager",
     duration: "Jun 2022 - Sep 2022",
     location: "Austin, Texas, USA",
@@ -110,5 +110,3 @@ export function ExperienceList() {
     </div>
   );
 }
-
-<style></style>;
