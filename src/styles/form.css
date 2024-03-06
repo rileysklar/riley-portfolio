@@ -50,4 +50,10 @@ button[type="submit"] {
   .contact-form {
     padding: 2em;
   }
+
+  .about {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+  }
 }
