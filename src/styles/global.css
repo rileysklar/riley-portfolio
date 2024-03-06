@@ -207,6 +207,69 @@ h5 {
   padding-bottom: 16px;
 }
 
+.two-column-list {
+  columns: 2; /* Create two columns */
+  column-gap: 20px; /* Adjust the gap between columns as needed */
+}
+
+.job-title,
+.duration,
+.location {
+  padding-top: 0.5em;
+}
+
+.job-title {
+  border-bottom: solid 1px #4caf50;
+  padding-bottom: 0.5em;
+  margin-bottom: 0.5em;
+  text-wrap: pretty;
+}
+
+.location {
+  color: var(--accent-regular);
+  font-size: 0.75em;
+  padding: 0 0 0.5em;
+}
+
+.duration {
+  display: inline-block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  line-height: 2;
+  font-size: 0.75em;
+  border-radius: 100em;
+  width: auto;
+  font-weight: 800;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+
+.content {
+  padding: 2em;
+  background-color: var(--gray-900);
+  border-radius: 2em;
+  overflow: hidden;
+}
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.current {
+  height: 3em;
+  width: 3em;
+  background-color: #4caf4f4c;
+  position: relative;
+  top: 40px;
+  left: -13%;
+}
+
 /* Utilities */
 
 .sr-only {
@@ -259,8 +322,34 @@ h5 {
 }
 
 @media (min-width: 50em) {
-  .faq {
+  .experience-list .content {
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .current {
+    top: 10%;
+    left: -16%;
+    height: 2em;
+    width: 2em;
+  }
+
+  .experience-list .faq {
     text-align: left;
+  }
+
+  .experience-list {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .about {
+    display: flex;
+    align-items: center;
   }
   .lg\:gap-2 {
     gap: 0.5rem;
