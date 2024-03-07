@@ -80,10 +80,7 @@ const ContactForm = () => {
         ></textarea>
         <button type="submit">Submit</button>
         {submissionSuccess && (
-          <p className="success">
-            Thanks for your message! I will get back to you — if you were nice
-            to me 😜
-          </p>
+          <p className="success">Thanks for your message! 🤝</p>
         )}
       </form>
     </>
