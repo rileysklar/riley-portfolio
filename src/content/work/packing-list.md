@@ -1,5 +1,5 @@
 ---
-title: Vue Packing List App
+title:🧳 Vue Packing List App
 publishDate: 2024-01-24 00:00:00
 img: /assets/vue-packing-list.jpg
 img_alt: Vue.js application for creating a study abroad packing list.

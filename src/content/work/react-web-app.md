@@ -1,5 +1,5 @@
 ---
-title: React Dynamic Message Board App
+title: 💭 Message Board App
 publishDate: 2024-02-07 00:00:00
 img: /assets/didyouknow.png
 img_alt: A message board that has functionality to dynamically call a database. Users can contribute facts, upvote and downvote facts based on their perceived truthfulness, cite their source, and sort by taxonomies.

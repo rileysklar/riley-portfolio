@@ -1,5 +1,5 @@
 ---
-title: Agency Landing Page
+title:📈 Agency Landing Page
 publishDate: 2023-10-20 00:00:00
 img: /assets/agency-landing-page.jpg
 img_alt: Iridescent ripples of a bright blue and pink liquid

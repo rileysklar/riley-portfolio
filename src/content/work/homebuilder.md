@@ -1,5 +1,5 @@
 ---
-title: Homebuilder Website
+title:🏠 Homebuilder Website
 publishDate: 2023-10-01 00:00:00
 img: /assets/gfo.png
 img_alt: A bright pink sheet of paper used to wrap flowers curves in front of rich blue background

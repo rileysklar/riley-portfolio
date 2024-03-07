@@ -1,5 +1,5 @@
 ---
-title: React Apple News Clone App
+title: Apple News Clone App
 publishDate: 2024-02-22 00:00:00
 img: /assets/apple-news-clone.jpg
 img_alt: A screenshot of the Apple News Clone app showing a list of news articles.
