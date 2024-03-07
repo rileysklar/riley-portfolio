@@ -1,5 +1,5 @@
 ---
-title:🫒 Shopify eComm Dev
+title: 🫒 Shopify eComm Dev
 publishDate: 2024-01-01 00:00:00
 img: /assets/gifted.jpg
 img_alt: An overview of the Gifted Root Shopify site showcasing its responsive design and custom user interface elements.

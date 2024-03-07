@@ -1,5 +1,5 @@
 ---
-title:🌤️ React Weather App
+title: 🌤️ React Weather App
 publishDate: 2024-02-17 00:00:00
 img: " /assets/social-preview.png"
 img_alt: A screenshot showcasing the React Weather App with current weather conditions and forecasts.
