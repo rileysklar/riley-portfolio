@@ -1,6 +1,6 @@
 # Riley Sklar - Front End Developer Portfolio 🚀
 
-<img src="https://rileysklar.netlify.app/assets/social-preview.png" alt="Riley Sklar" width="400"/>
+<img src="https://rileysklar.netlify.app/assets/preview-imessage.jpg" alt="Riley Sklar" width="400"/>
 
 Visit the live site [here](https://rileysklar.io).
 
