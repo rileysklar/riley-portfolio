@@ -20,7 +20,10 @@ tags:
 ##### Current Global Usership: 25 users
 
 </em>
-> Welcome to FitQuench, a fun and interactive app built with React & Vite! This app is designed to help you keep track of your exercise and drinking habits.
+
+> This app is a solution to a real-world problem I experienced while trying to track my exercise days on a paper calendar on my refrigerator. I also wanted to keep track of days that I choose to drink alcohol, so I can make sure I am always in good balance.
+
+Built with React, Vite, & Node.js, with a Supabase database and User Authentication, I designed this full-stack app with the intention of putting my development skills to use to solve real world problems.
 
 ##### Introduction
 
