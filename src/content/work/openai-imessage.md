@@ -1,6 +1,6 @@
 ---
 title: 💬 OpenAI iMessage App
-publishDate: 2024-13-30 00:00:00
+publishDate: 2024-03-30 00:00:00
 img: /assets/preview-imessage.jpg
 img_alt: A screenshot of the OpenAI iMessage App interface with a chat conversation.
 description: |
@@ -20,8 +20,6 @@ tags:
 #### Introduction
 
 In an era where instant communication is paramount, the OpenAI iMessage App stands out by incorporating OpenAI's advanced AI into an intuitive chat interface. This project is not just about messaging; it's about creating meaningful and engaging interactions with AI, leveraging React, Node.js, and Axios for a smooth, real-time experience.
-
-#### Technical Implementation Details
 
 ##### React, Node.js, and Axios Integration
 
