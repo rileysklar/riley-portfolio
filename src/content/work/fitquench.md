@@ -14,12 +14,13 @@ tags:
 
 #### FitQuench: Tracking Your Exercise and Drinking Habits
 
-[Visit the live site](https://fitquench.netlify.app)
+[Visit the live app](https://fitquench.netlify.app)
 <em>
 
 ##### Current Global Usership: 25 users
 
 </em>
+Be a part of the growing global beta testing community. Try it out. Let me know what you think!
 
 > This app is a solution to a real-world problem I experienced while trying to track my exercise days on a paper calendar on my refrigerator. I also wanted to keep track of days that I choose to drink alcohol, so I can make sure I am always in good balance.
 
@@ -58,4 +59,6 @@ FitQuench is more than just an app—it's a comprehensive solution for tracking 
 
 ---
 
-This project showcases the power of full-stack development, demonstrating how React, Supabase, and user authentication can come together to create a seamless and engaging user experience. FitQuench is not just an app; it's a testament to t
+This project showcases the power of full-stack development, demonstrating how React, Supabase, and user authentication can come together to create a seamless and engaging user experience. Thanks for being a beta user!
+
+[Visit the live app](https://fitquench.netlify.app)
