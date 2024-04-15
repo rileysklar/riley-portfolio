@@ -4,7 +4,7 @@ import "../styles/accordion.css";
 const experiences = [
   {
     company: "ShakeWell Creative",
-    title: "💻 Lead Web Developer & UI Designer",
+    title: "💻 Lead Front End Developer & UI Designer",
     duration: "Sep 2022 - Present",
     location: "Austin, Texas, USA",
     current: true,
