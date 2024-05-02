@@ -47,3 +47,5 @@ Here are the actions we took:
 - Integrated real-time analytics to monitor user engagement and optimize the site based on data-driven insights.
 
 [Visit the live website](http://creation.energy)
+
+— Credit: ShakeWell Creative Agency
