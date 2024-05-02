@@ -96,3 +96,5 @@ Fluence is at the forefront of creating lighting solutions for controlled enviro
 As a trusted partner, Fluence has been a valued client of our agency. We collaborate closely to ensure that their e-commerce platform remains on the cutting edge of technology and industry standards. With Fluence's business in a constant state of evolution, we are dedicated to providing ongoing updates and enhancements to their platform. This commitment empowers Fluence to remain competitive and responsive to the changing demands of the controlled environment commercial crop production sector.
 
 Our partnership with Fluence epitomizes our unwavering dedication to delivering top-notch services and support to our clients. We work together to illuminate the path forward, combining technology and innovation to drive success in an ever-evolving world.
+
+— Credit: ShakeWell Creative Agency

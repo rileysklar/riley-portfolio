@@ -31,3 +31,5 @@ Our web app introduces a visionary approach to home building by seamlessly integ
 - Security Protocols: Stringent security measures are in place to safeguard sensitive data and maintain the privacy of users.
 
 Our web app represents a leap forward in the home-building industry, leveraging dynamic XML feed outputs to bring property listings to a wider audience. By combining the power of WordPress, Elementor, and a versatile technology stack, we're reshaping the way homes are discovered and purchased. This project is a testament to our agency's commitment to innovation and excellence, delivering an exceptional solution that bridges the gap between home builders and eager buyers. Together, we're propelling the industry into a new era of opportunity and accessibility.
+
+— Credit: ShakeWell Creative Agency

@@ -30,3 +30,5 @@ Our web app leverages gamification principles to make the recruitment process no
 - Security Measures: We have implemented robust security measures to safeguard candidate data and maintain user privacy.
 
 Our gamified web app is not just a recruitment tool; it's a testament to our commitment to pushing the boundaries of technology to deliver exceptional solutions for our clients. By combining innovative gamification with a solid technology stack, we are reshaping workforce recruitment for TXDOT, making it more interactive and engaging than ever before. Together, we are setting new standards in the field and facilitating a brighter future for the workforce in Texas.
+
+— Credit: ShakeWell Creative Agency

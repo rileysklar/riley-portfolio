@@ -32,3 +32,5 @@ Our agency's landing page is an expression of our creative essence, an experienc
 - SEO Optimization: Techniques for optimizing search engine rankings and enhancing visibility.
 
 Our agency's landing page at Shakewell Creative is more than just a digital presence; it's a reflection of our artistic spirit and commitment to delivering outstanding work. By harnessing the power of creativity and technology, we've built a dynamic platform that welcomes visitors to our world, invites them to explore our portfolio, and shows them the vibrant essence of our agency. We're excited to continue this creative journey and share our passion and expertise with the world.
+
+— Credit: ShakeWell Creative Agency

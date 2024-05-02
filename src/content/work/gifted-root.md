@@ -35,3 +35,5 @@ Deploying a comprehensive marketing strategy was crucial for driving site traffi
 The integration of analytics tools played a pivotal role in monitoring and refining our strategies. This data-driven approach helped us continuously improve our site and marketing efforts, leading to surpassing our initial sales forecasts within the first month of launch.
 
 In summary, developing Gifted Root’s Shopify site was a comprehensive project that highlighted the importance of a strong technical foundation in Liquid and CSS. This foundation supported every other facet of the project, from branding and design to marketing, culminating in a successful launch that exceeded our expectations.
+
+— Credit: ShakeWell Creative Agency
