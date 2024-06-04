@@ -3,11 +3,21 @@ import "../styles/accordion.css";
 
 const experiences = [
   {
-    company: "ShakeWell Creative",
-    title: "💻 Lead Front End Developer & UI Designer",
-    duration: "Sep 2022 - Present",
+    company: "DISCO",
+    title: "🪩 Manager, Web Development & Design",
+    duration: "June 2024 - Present",
     location: "Austin, Texas, USA",
     current: true,
+    bullets: [
+      "I lead a team of web developers and designers to deliver enterprise web applications that support cloud-based legal management solutions to help law practitioners analyze and manage litigation.",
+    ],
+  },
+  {
+    company: "ShakeWell Creative",
+    title: "💻 Lead Front End Developer & UI Designer",
+    duration: "Sep 2022 - June 2024",
+    location: "Austin, Texas, USA",
+    current: false,
     bullets: [
       "I lead a small team to deliver web applications for various clients, including Fortune 500 companies and state government agencies.",
     ],
