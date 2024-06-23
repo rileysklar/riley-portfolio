@@ -9,7 +9,7 @@ const experiences = [
     location: "Austin, Texas, USA",
     current: true,
     bullets: [
-      "I lead a team of web developers and designers to deliver enterprise web applications that support cloud-based legal management solutions to help law practitioners analyze and manage litigation.",
+      "I lead a team of web developers and designers to deliver enterprise web applications that support cloud-based AI legal management solutions to help law practitioners analyze and manage litigation.",
     ],
   },
   {
