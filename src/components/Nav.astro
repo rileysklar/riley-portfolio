@@ -38,11 +38,11 @@ const iconLinks: {
     href: "https://instagram.com/rileysklar",
     icon: "instagram-logo",
   },
-  {
-    label: "Twitter",
-    href: "https://twitter.com/rileysklar",
-    icon: "twitter-logo",
-  },
+  // {
+  //   label: "Twitter",
+  //   href: "https://twitter.com/rileysklar",
+  //   icon: "twitter-logo",
+  // },
   // { label: "Twitch", href: "https://twitch.tv/me", icon: "twitch-logo" },
   // {
   //   label: "CodePen",
@@ -204,18 +204,50 @@ const iconLinks: {
     }
   }
   customElements.define("menu-button", MenuButton);
+
+  // Add scroll behavior
+  let lastScrollY = window.scrollY;
+  const nav = document.querySelector("nav");
+
+  window.addEventListener("scroll", () => {
+    if (!nav) return;
+
+    const currentScrollY = window.scrollY;
+    const scrollingDown = currentScrollY > lastScrollY;
+
+    // Only apply transform when scrolling past 100px
+    if (currentScrollY > 100) {
+      nav.style.transform = scrollingDown
+        ? "translateY(-100%)"
+        : "translateY(0)";
+    } else {
+      nav.style.transform = "translateY(0)";
+    }
+
+    lastScrollY = currentScrollY;
+  });
 </script>
 
 <style>
   nav {
     z-index: 9999;
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     font-family: var(--font-brand);
     font-weight: 500;
-    margin-bottom: 3.5rem;
+    height: var(--nav-height);
+    transition: transform 0.3s ease;
+    align-content: center;
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
+    border-radius: 100rem;
+    margin: 1rem;
   }
 
   .menu-header {
+    position: relative;
     display: flex;
     justify-content: space-between;
     gap: 0.5rem;
@@ -235,41 +267,61 @@ const iconLinks: {
   .menu-button {
     position: relative;
     display: flex;
-    border: dotted;
-    border-radius: 999rem;
+    align-items: center;
+    justify-content: center;
+    border: none;
     padding: 0.5rem;
-    font-size: 1.5rem;
-    /* background: radial-gradient(var(--accent-900), var(--gray-800) 150%); */
-    /* box-shadow: var(--shadow-md); */
-    color: var(--grey-900);
+    width: 2.5rem;
+    height: 2.5rem;
+    background: transparent;
+    cursor: pointer;
   }
 
-  .menu-button[aria-expanded="true"] {
-    color: var(--accent-dark);
-    border-color: var(--accent-dark);
-    border: solid;
-    /* background: linear-gradient(180deg, var(--gray-600), transparent),
-      radial-gradient(var(--gray-900), var(--gray-800) 150%); */
+  .menu-button::before,
+  .menu-button::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 1.5rem;
+    height: 2px;
+    background: var(--gray-0);
+    transition: transform 0.3s ease;
+  }
+
+  .menu-button::before {
+    transform: translateY(-4px);
+  }
+
+  .menu-button::after {
+    transform: translateY(4px);
+  }
+
+  .menu-button[aria-expanded="true"]::before {
+    transform: rotate(45deg);
+  }
+
+  .menu-button[aria-expanded="true"]::after {
+    transform: rotate(-45deg);
+  }
+
+  .menu-button :global(svg) {
+    display: none;
   }
 
   .menu-button[hidden] {
     display: none;
   }
 
-  .menu-button::before {
-    position: absolute;
-    inset: -1px;
-    content: "";
-    /* background: var(--gradient-stroke); */
-    border-radius: 999rem;
-    z-index: -1;
-  }
-
   .menu-content {
     position: absolute;
     left: 0;
     right: 0;
+    top: 7.5rem;
     animation: slideDown 0.2s ease-out;
+    border-radius: 1rem;
+    box-shadow: var(--shadow-md);
+    margin: 0.5rem;
+    overflow: hidden;
   }
 
   .nav-items {
@@ -354,7 +406,7 @@ const iconLinks: {
     height: calc(var(--icon-size) + 2 * var(--icon-padding));
     border: 1px solid var(--gray-800);
     border-radius: 100em;
-    padding: 0.3em .15em;
+    padding: 0.3em 0.15em;
   }
 
   @media (min-width: 50em) {
@@ -401,7 +453,8 @@ const iconLinks: {
     .link {
       padding: 0.5rem 1rem;
       border-radius: 999rem;
-      transition: color var(--theme-transition),
+      transition:
+        color var(--theme-transition),
         background-color var(--theme-transition);
     }
 

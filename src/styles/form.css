@@ -9,6 +9,10 @@
   width: 100%;
 }
 
+form.contact-form {
+  padding: 1rem;
+}
+
 input,
 textarea {
   padding: 1em 1em;
