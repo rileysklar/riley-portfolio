@@ -10,7 +10,7 @@ import Hero from "../components/Hero.astro";
   title="Riley Sklar Portfolio"
   description="Front End Developer and UI Designer | Austin, Texas"
 >
-  <main class="stack gap-20">
+  <main class="stack gap-12">
     <div class="wrapper about">
       <Hero
         title="About Me"
@@ -66,6 +66,14 @@ import Hero from "../components/Hero.astro";
       <section>
         <h2 class="section-title">🔨 Skills</h2>
         <div class="tag-bubble">
+          <div class="tagGIS">Webflow</div>
+          <div class="tagGIS">RAG</div>
+          <div class="tagGIS">LLM</div>
+          <div class="tagGIS">FastAPI</div>
+          <div class="tagGIS">Langchain</div>
+          <div class="tagGIS">Pinecone</div>
+          <div class="tagGIS">DynamoDB</div>
+          <div class="tagGIS">Python</div>
           <div class="tagGIS">JavaScript</div>
           <div class="tagGIS">TypeScript</div>
           <div class="tagGIS">CSS</div>
@@ -119,7 +127,7 @@ import Hero from "../components/Hero.astro";
     img {
       margin-top: 1.5rem;
       border-radius: 1.5rem;
-      box-shadow: var(--shadow-md);
+      /* box-shadow: var(--shadow-md); */
     }
 
     section {
@@ -160,6 +168,7 @@ import Hero from "../components/Hero.astro";
 
     .tagGIS {
       background-color: var(--gray-900);
+      border: 1px solid var(--gray-800);
       border-radius: 100em;
       padding: 0.25em 1em;
       font-size: 1em;

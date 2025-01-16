@@ -47,7 +47,7 @@ const faqs = [
 
 <BaseLayout>
   <div class="stack gap-20 lg:gap-48">
-    <div class="wrapper stack gap-8 lg:gap-20">
+    <div class="wrapper stack gap-4 lg:gap-12">
       <header class="hero">
         <Hero
           title="Hi, I'm Riley"
@@ -81,28 +81,11 @@ const faqs = [
           alt="Riley smiling in a typical plain black designer t-shirt"
           width="480"
           height="480"
-          src="/assets/headshot.jpg"
+          src="/assets/headshot.png"
         />
       </header>
 
-      <Skills />
-    </div>
-
-    <main class="wrapper stack gap-20 lg:gap-48">
       <section class="section with-background with-cta">
-        <header class="section-header stack gap-2 lg:gap-4">
-          <div id="gallery-route"></div>
-          <h3>✨ Featured Work</h3>
-          <p>
-            Take a look below at some of my agency work — including innovative
-            web solutions using JavaScript, React, Vue, WordPress and many other
-            technologies for diverse clients including Fortune 500 companies,
-            leading lighting manufacturers, and state government agencies,
-            demonstrating our ability to meet varied industry needs with
-            creativity and precision.
-          </p>
-        </header>
-
         <div class="gallery">
           <Grid variant="offset">
             {
@@ -114,14 +97,18 @@ const faqs = [
             }
           </Grid>
         </div>
-
-        <div class="cta">
-          <CallToAction href="/work/">
-            View All<Icon icon="arrow-right" size="1.2em" />
-          </CallToAction>
-        </div>
       </section>
 
+      <div class="cta-wrapper">
+        <CallToAction href="/work/">
+          View All<Icon icon="arrow-right" size="1.2em" />
+        </CallToAction>
+      </div>
+
+      <Skills />
+    </div>
+
+    <main class="wrapper stack gap-20 lg:gap-48">
       <div class="faq-parent">
         <div class="section-header stack gap-2 lg:gap-4">
           <h3 class="faq">📋 FAQ</h3>
@@ -162,7 +149,7 @@ const faqs = [
     object-position: top;
     border-radius: 1em;
     order: 1px solid var(--gray-800);
-    box-shadow: var(--shadow-md);
+    /* box-shadow: var(--shadow-md); */
     max-width: 60%;
   }
 
@@ -273,6 +260,8 @@ const faqs = [
 
     .cta {
       grid-area: cta;
+      display: flex;
+      align-items: center;
     }
   }
 
@@ -295,6 +284,19 @@ const faqs = [
     .mention-card {
       border-radius: 1.5rem;
       height: 9.5rem;
+    }
+  }
+
+  .cta-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+
+  @media (min-width: 50em) {
+    .cta-wrapper {
+      justify-content: flex-end;
+      margin-top: 3rem;
     }
   }
 </style>

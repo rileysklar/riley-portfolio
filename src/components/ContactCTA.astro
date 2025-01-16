@@ -1,31 +1,143 @@
 ---
-import CallToAction from "./CallToAction.astro";
 import Icon from "./Icon.astro";
 ---
 
 <aside>
-  <h2>
-    Reach out and let me know if you'd like to collaborate with me, compliment
-    me or just chat!
-  </h2>
-
-  <CallToAction href="/contact">
-    Send Me a Message
-    <Icon icon="paper-plane-tilt" size="1.2em" />
-  </CallToAction>
+  <div class="content">
+    <h2 class="pt-8 p-4 text-md">
+      Reach out and let me know if you'd like to collaborate with me, compliment
+      me or just chat!
+    </h2>
+    <div class="form-wrapper">
+      <div id="contact-form"></div>
+    </div>
+  </div>
 </aside>
+
+<script>
+  import { useForm } from '@formspree/react';
+  import React from 'react';
+  import { createRoot } from 'react-dom/client';
+
+  interface FormState {
+    succeeded: boolean;
+    submitting: boolean;
+    errors: {
+      [key: string]: string;
+    };
+  }
+
+  function ContactForm() {
+    const [state, handleSubmit] = useForm("xovvbbpr");
+    
+    if (state.succeeded) {
+      return React.createElement('p', { className: 'success' }, 'Thanks for your message! 🤝');
+    }
+
+    const getErrorMessage = (fieldName: string) => {
+      return state.errors && state.errors[fieldName];
+    };
+
+    return React.createElement('form', {
+      onSubmit: handleSubmit,
+      className: 'contact-form',
+      'aria-label': 'Contact form'
+    }, [
+      React.createElement('label', {
+        key: 'name-label',
+        htmlFor: 'name',
+        className: 'form-label'
+      }, 'Name'),
+      React.createElement('input', {
+        key: 'name',
+        id: 'name',
+        type: 'text',
+        name: 'name',
+        placeholder: 'John Doe',
+        'aria-label': 'Your name',
+        required: true
+      }),
+      getErrorMessage('name') && 
+        React.createElement('p', { 
+          key: 'name-error',
+          className: 'error-message',
+          role: 'alert'
+        }, getErrorMessage('name')),
+      React.createElement('label', {
+        key: 'email-label',
+        htmlFor: 'email',
+        className: 'form-label'
+      }, 'Email'),
+      React.createElement('input', {
+        key: 'email',
+        id: 'email',
+        type: 'email',
+        name: 'email',
+        placeholder: 'johndoe@example.com',
+        'aria-label': 'Your email address',
+        required: true
+      }),
+      getErrorMessage('email') && 
+        React.createElement('p', { 
+          key: 'email-error',
+          className: 'error-message',
+          role: 'alert'
+        }, getErrorMessage('email')),
+      React.createElement('label', {
+        key: 'message-label',
+        htmlFor: 'message',
+        className: 'form-label'
+      }, 'Message'),
+      React.createElement('textarea', {
+        key: 'message',
+        id: 'message',
+        name: 'message',
+        placeholder: 'Write your message here...',
+        'aria-label': 'Your message',
+        required: true,
+        rows: 4
+      }),
+      getErrorMessage('message') && 
+        React.createElement('p', { 
+          key: 'message-error',
+          className: 'error-message',
+          role: 'alert'
+        }, getErrorMessage('message')),
+      React.createElement('button', {
+        key: 'submit',
+        type: 'submit',
+        disabled: state.submitting,
+        'aria-label': state.submitting ? 'Sending message...' : 'Send message'
+      }, state.submitting ? 'Sending...' : 'Send Message')
+    ]);
+  }
+
+  const container = document.getElementById('contact-form');
+  if (container) {
+    const root = createRoot(container);
+    root.render(React.createElement(ContactForm));
+  }
+</script>
 
 <style>
   aside {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 3rem;
     border-top: 1px solid var(--gray-800);
     border-bottom: 1px solid var(--gray-800);
-    padding: 5rem 1.5rem;
-    background-color: var(--gray-999_40);
-    box-shadow: var(--shadow-sm);
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    width: 100%;
+    max-width: var(--container-max-width, 1280px);
+    margin: 0 auto;
+  }
+
+  .form-wrapper {
+    width: 100%;
+    max-width: 600px;
   }
 
   h2 {
@@ -35,17 +147,87 @@ import Icon from "./Icon.astro";
     text-wrap: balance;
   }
 
+  :global(.contact-form) {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 100%;
+    background-color: var(--gray-900);
+    margin-bottom: 4em;
+    border-radius: 2em;
+    padding: 2em;
+    padding-top: 0em;
+  }
+
+  :global(.form-label) {
+    color: var(--gray-200);
+    font-size: 1em;
+    font-weight: 800;
+    margin-bottom: -0.5em;
+  }
+
+  :global(.contact-form input),
+  :global(.contact-form textarea) {
+    padding: 1em 1em;
+    width: 100%;
+    border-radius: 8px;
+    background-color: transparent;
+    border: 1px solid #8e8e8e6e;
+    color: var(--gray-0);
+    font-size: 1em;
+  }
+
+  :global(.contact-form textarea) {
+    resize: vertical;
+    min-height: 100px;
+  }
+
+  :global(.contact-form input:focus-visible),
+  :global(.contact-form textarea:focus-visible) {
+    outline: var(--accent-regular) auto 1px;
+  }
+
+  :global(.contact-form button) {
+    padding: 1em 2em;
+    border-radius: 999rem;
+    background-color: var(--accent-regular);
+    color: var(--gray-900);
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-top: 1em;
+  }
+
+  :global(.contact-form button:hover) {
+    background-color: var(--accent-dark);
+  }
+
+  :global(.contact-form button:disabled) {
+    background-color: var(--gray-600);
+    cursor: not-allowed;
+  }
+
+  :global(.error-message) {
+    color: #ff6b6b;
+    font-size: 0.875em;
+    margin-top: -0.5em;
+  }
+
+  :global(.success) {
+    color: var(--accent-regular);
+    text-align: center;
+    font-size: 1.25em;
+    padding: 2em;
+  }
+
   @media (min-width: 50em) {
     aside {
       padding: 7.5rem;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
     }
 
     h2 {
       font-size: var(--text-3xl);
-      text-align: left;
     }
   }
 </style>
