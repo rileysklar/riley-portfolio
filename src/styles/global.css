@@ -510,3 +510,31 @@ a.github-link {
 pre .astro-code code {
   width: 100%;
 }
+
+/* Add these styles at the end of your global.css file */
+pre, code {
+  max-width: 100%;
+  white-space: pre-wrap;       /* CSS 3 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+  overflow-x: auto;
+  font-size: 0.9em;
+  padding: 1em;
+  border-radius: 8px;
+}
+
+pre .astro-code {
+  width: 100%;
+  display: block;
+}
+
+pre .astro-code code {
+  width: 100%;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  pre, code {
+    font-size: 0.85em;
+    padding: 0.75em;
+  }
+}
