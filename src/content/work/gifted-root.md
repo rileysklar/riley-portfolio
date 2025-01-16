@@ -1,7 +1,7 @@
 ---
 title: 🫒 Shopify eComm Dev
 publishDate: 2024-01-01 00:00:00
-img: /assets/gifted.jpg
+img: /assets/gifted.png
 img_alt: An overview of the Gifted Root Shopify site showcasing its responsive design and custom user interface elements.
 description: A deep dive into the development process of the Gifted Root Shopify site, focusing on the integration of Liquid and CSS for custom themes, dynamic content rendering, and a seamless user experience. This case study also explores the strategic approach to branding, design, business modeling, and marketing that contributed to surpassing the forecasted goals in the first month of launch.
 tags:

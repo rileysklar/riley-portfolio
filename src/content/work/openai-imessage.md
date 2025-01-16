@@ -1,7 +1,7 @@
 ---
 title: 💬 OpenAI iMessage App
 publishDate: 2024-03-30 00:00:00
-img: /assets/preview-imessage.jpg
+img: /assets/preview-imessage.png
 img_alt: A screenshot of the OpenAI iMessage App interface with a chat conversation.
 description: |
   This app, built with React, Node.js, and Axios, mimics Apple's iMessage UI and integrates OpenAI's GPT-3 for real-time messaging. It features advanced API integration and utilizes Retrieval Augmented Generation (RAG) to enhance chatbot accuracy and context-awareness, providing users with a seamless and intelligent messaging experience.

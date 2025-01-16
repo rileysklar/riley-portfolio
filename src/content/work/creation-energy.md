@@ -1,7 +1,7 @@
 ---
 title: 🌍 Creation Energy
 publishDate: 2024-03-01 00:00:00
-img: /assets/creation-energy.jpg
+img: /assets/creation-energy.png
 img_alt: Behind-the-scenes look at the development of a renewable energy platform.
 description: Scalable WordPress website for energy startup seeking VC funding. My team and I started from brand and logo design, design system, low-res wireframes, Figma mocks, and development.
 tags:

@@ -1,7 +1,7 @@
 ---
 title: 💍 AI Wedding Website
 publishDate: 2025-03-15 00:00:00
-img: /assets/wedding.jpg
+img: /assets/wedding.png
 img_alt: AI-powered wedding website interface showing chatbot and event details
 description: A revolutionary wedding planning platform powered by Python, RAG, and vector databases. Features an AI chatbot for instant guest support, smart search capabilities, and seamless event coordination.
 tags:

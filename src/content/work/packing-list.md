@@ -1,7 +1,7 @@
 ---
 title: 🧳 Vue Packing List App
 publishDate: 2024-01-24 00:00:00
-img: /assets/vue-packing-list.jpg
+img: /assets/vue-packing-list.png
 img_alt: Vue.js application for creating a study abroad packing list.
 description: |
   An intuitive and user-friendly Vue.js application designed for students planning their study abroad. This app helps in organizing and managing packing lists, ensuring nothing essential is forgotten. Built with Vue.js, it offers a seamless and interactive experience, making packing for study abroad stress-free and efficient.

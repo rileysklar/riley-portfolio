@@ -1,7 +1,7 @@
 ---
 title: 💡 LED Brand Site
 publishDate: 2023-10-10 00:00:00
-img: /assets/led.jpg
+img: /assets/led.png
 img_alt: Cannabis LED lighting manufacturer brand site.
 description: |
   Cannabis LED lighting manufacturer brand site.
