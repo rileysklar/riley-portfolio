@@ -1,7 +1,7 @@
 ---
 title:  Apple News Clone App
 publishDate: 2024-02-22 00:00:00
-img: /assets/apple-news-clone.jpg
+img: /assets/apple-news-clone.png
 img_alt: A screenshot of the Apple News Clone app showing a list of news articles.
 description: |
   A React-based news aggregation app cloning the Apple News interface, utilizing Vite for blazing-fast development and an external news API for fetching real-time news articles. Users can view top stories, load more articles dynamically, and read detailed news content by navigating to external sources.

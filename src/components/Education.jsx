@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "../styles/accordion.css";
 
 const education = [
@@ -19,25 +19,30 @@ const education = [
 ];
 
 export function EducationList() {
-  return (
-    <div className="experience-list">
-      {education.map((education, index) => (
-        <div key={index} className="content">
-          <p className="location">{education.location}</p>
-          <h5>{education.company}</h5>
-          <p className="job-title">
-            <strong>{education.title}</strong>
-          </p>
-
-          <ul>
-            {education.bullets.map((bullet, bulletIndex) => (
-              <li key={bulletIndex}>{bullet}</li>
-            ))}
-          </ul>
-          <p className="duration">{education.duration}</p>
-          {education.current && <p className="current"></p>}
-        </div>
-      ))}
-    </div>
+  return React.createElement(
+    "div",
+    { className: "experience-list" },
+    education.map((edu, index) =>
+      React.createElement(
+        "div",
+        { key: index, className: "content" },
+        React.createElement("p", { className: "location" }, edu.location),
+        React.createElement("h5", null, edu.company),
+        React.createElement(
+          "p",
+          { className: "job-title" },
+          React.createElement("strong", null, edu.title)
+        ),
+        React.createElement(
+          "ul",
+          null,
+          edu.bullets.map((bullet, bulletIndex) =>
+            React.createElement("li", { key: bulletIndex }, bullet)
+          )
+        ),
+        React.createElement("p", { className: "duration" }, edu.duration),
+        edu.current && React.createElement("p", { className: "current" })
+      )
+    )
   );
 }

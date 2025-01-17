@@ -40,7 +40,7 @@ const { data, slug } = Astro.props.project;
     font-size: var(--text-sm);
     font-weight: 500;
     transition: box-shadow var(--theme-transition);
-    margin: 1em;
+    /* margin: 1em; */
   }
 
   .tag-bubble {
@@ -50,12 +50,12 @@ const { data, slug } = Astro.props.project;
     overflow-wrap: break-word;
     flex-wrap: wrap;
     text-wrap: balance;
-    padding: 0 1em 1em 1em;
+    padding: 0 2em 2em 2em;
     justify-content: flex-start;
   }
 
   .description {
-    padding: 0 1em 1em 1em;
+    padding: 0 2em 1em 2em;
     background-color: transparent;
     color: var(--gray-50);
   }
@@ -68,7 +68,7 @@ const { data, slug } = Astro.props.project;
 
   .title {
     z-index: 1;
-    padding: 0.5rem 1rem;
+    padding: 2rem 2rem 1rem 2rem;
     color: var(--gray-200);
     font-size: var(--text-lg);
     text-wrap: pretty;

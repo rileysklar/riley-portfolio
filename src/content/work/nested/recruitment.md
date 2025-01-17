@@ -1,7 +1,7 @@
 ---
 title: 🛣️ Recruitment Microsite
 publishDate: 2023-10 00:00:00
-img: /assets/recruitment.jpg
+img: /assets/recruitment.png
 img_alt: Pearls of silky soft white cotton, bubble up under vibrant lighting
 description: |
   We developed a gamified web app to help recruit workers for TXDOT.

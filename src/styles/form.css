@@ -3,10 +3,14 @@
   flex-direction: column;
   gap: 1em;
   width: 100%;
-  padding: 1.5em;
   background-color: var(--gray-900);
   margin-bottom: 4em;
   border-radius: 2em;
+  width: 100%;
+}
+
+form.contact-form {
+  padding: 1.5rem;
 }
 
 input,
@@ -58,9 +62,7 @@ button:active {
     width: 500px;
   }
 
-  .contact-form {
-    padding: 2em;
-  }
+
 
   .about {
     display: flex;

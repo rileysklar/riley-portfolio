@@ -8,5 +8,7 @@ module.exports = {
     require("@tailwindcss/nesting"), // This enables CSS nesting
     require("tailwindcss"),
     require("autoprefixer"),
+    require('tailwindcss-motion'), 
+
   ],
 };

@@ -4,66 +4,43 @@
 
 /* Global variables */
 :root {
-  /* Colors */
-  --gray-0: #090b11;
-  --gray-50: #141925;
-  --gray-100: #283044;
-  --gray-200: #3d4663;
-  --gray-300: #505d84;
-  --gray-400: #6474a2;
-  --gray-500: #8490b5;
-  --gray-600: #a3acc8;
-  --gray-700: #c3cadb;
-  --gray-800: #e3e6ee;
-  --gray-900: #f3f4f7;
+  /* Light Mode Colors */
+  --gray-0: #0959da	;      /* Text/border color */
+  --gray-50: #0959da	;     /* Text/border color */
+  --gray-100: #0959da	;    /* Text/border color */
+  --gray-200: #0959da	;    /* Text/border color */
+  --gray-300: #0959da	;    /* Text/border color */
+  --gray-400: #0959da	;    /* Text/border color */
+  --gray-500: #0959da	;    /* Text/border color */
+  --gray-600: #0959da	;    /* Text/border color */
+  --gray-700: #0959da	;    /* Text/border color */
+  --gray-800: #0959da	;    /* Text/border color */
+  --gray-900: #ffffff;    /* Background color */
   --gray-999-basis: 0, 0%, 100%;
   --gray-999_40: hsla(var(--gray-999-basis), 0.4);
-  --gray-999: #ffffff;
+  --gray-999: #ffffff;    /* Background color */
 
-  --accent-light: #7cceec;
-  --accent-regular: #00b2e0;
-  --accent-dark: #019ad4;
-  --accent-overlay: hsla(210, 53%, 55%, 0.33);
+  /* Accent colors - mapped to primary color */
+  --accent-light: #0959da	;
+  --accent-regular: #0959da	;
+  --accent-dark: #0959da	;
+  --accent-overlay: hsla(217, 71%, 56%, 0.13);
   --accent-subtle-overlay: var(--accent-overlay);
   --accent-text-over: var(--gray-999);
 
+  /* Link color */
   --link-color: var(--accent-regular);
 
-  /* Gradients */
-  --gradient-stop-1: var(--accent-light);
-  --gradient-stop-2: var(--accent-regular);
-  --gradient-stop-3: var(--accent-dark);
-  --gradient-subtle: linear-gradient(
-    150deg,
-    var(--gray-900) 19%,
-    var(--gray-999) 150%
-  );
-  --gradient-accent: linear-gradient(
-    150deg,
-    var(--gradient-stop-1),
-    var(--gradient-stop-2),
-    var(--gradient-stop-3)
-  );
-  --gradient-accent-orange: linear-gradient(
-    150deg,
-    #ca7879,
-    var(--accent-regular),
-    var(--accent-dark)
-  );
+  /* Gradients - simplified to use our two colors */
+  --gradient-stop-1: #0959da	;
+  --gradient-stop-2: #0959da	;
+  --gradient-stop-3: #0959da	;
+  --gradient-subtle: linear-gradient(150deg, var(--gray-900) 19%, var(--gray-999) 150%);
+  --gradient-accent: linear-gradient(150deg, var(--gradient-stop-1), var(--gradient-stop-2), var(--gradient-stop-3));
+  --gradient-accent-orange: linear-gradient(150deg, #0959da	, var(--accent-regular), var(--accent-dark));
   --gradient-stroke: linear-gradient(180deg, var(--gray-900), var(--gray-700));
 
-  /* Shadows */
-  --shadow-sm: 0px 6px 3px rgba(9, 11, 17, 0.01),
-    0px 4px 2px rgba(9, 11, 17, 0.01), 0px 2px 2px rgba(9, 11, 17, 0.02),
-    0px 0px 1px rgba(9, 11, 17, 0.03);
-  --shadow-md: 0px 28px 11px rgba(9, 11, 17, 0.01),
-    0px 16px 10px rgba(9, 11, 17, 0.03), 0px 7px 7px rgba(9, 11, 17, 0.05),
-    0px 2px 4px rgba(9, 11, 17, 0.06);
-  --shadow-lg: 0px 62px 25px rgba(9, 11, 17, 0.01),
-    0px 35px 21px rgba(9, 11, 17, 0.05), 0px 16px 16px rgba(9, 11, 17, 0.1),
-    0px 4px 9px rgba(9, 11, 17, 0.12);
-
-  /* Text Sizes */
+  /* Text Sizes - Adding these back */
   --text-sm: 0.875rem;
   --text-base: 1rem;
   --text-md: 1.125rem;
@@ -74,67 +51,70 @@
   --text-4xl: 3.5rem;
   --text-5xl: 4.5rem;
 
-  /* Fonts */
+  /* Fonts - Adding these back */
   --font-system: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  --font-body: "Public Sans", var(--font-system);
-  --font-brand: Rubik, var(--font-system);
+  --font-body: Courier, var(--font-system);
+  --font-brand: Courier, var(--font-system);
 
-  /* Transitions */
+  /* Shadows - Adding these back */
+  --shadow-sm: 0px 6px 3px rgba(9, 11, 17, 0.01),
+    0px 4px 2px rgba(9, 11, 17, 0.01), 0px 2px 2px rgba(9, 11, 17, 0.02),
+    0px 0px 1px rgba(9, 11, 17, 0.03);
+  --shadow-md: 0px 0px 11px rgba(9, 11, 17, 0.01),
+    0px 0px 10px rgba(9, 11, 17, 0.03), 0px 0px 7px rgba(9, 11, 17, 0.05),
+    0px 0px 4px rgba(9, 11, 17, 0.06);
+  --shadow-lg: 0px 62px 25px rgba(9, 11, 17, 0.01),
+    0px 35px 21px rgba(9, 11, 17, 0.05), 0px 16px 16px rgba(9, 11, 17, 0.1),
+    0px 4px 9px rgba(9, 11, 17, 0.12);
+
+  /* Theme transition */
   --theme-transition: 0.2s ease-in-out;
 }
 
+/* Dark mode colors */
 :root.theme-dark {
-  --gray-0: #ffffff;
-  --gray-50: #f3f4f7;
-  --gray-100: #e3e6ee;
-  --gray-200: #c3cadb;
-  --gray-300: #a3acc8;
-  --gray-400: #8490b5;
-  --gray-500: #6474a2;
-  --gray-600: #505d84;
-  --gray-700: #3d4663;
-  --gray-800: #283044;
-  --gray-900: #141925;
+  --gray-0: #ffffff;      /* Text/border color */
+  --gray-50: #ffffff;     /* Text/border color */
+  --gray-100: #ffffff;    /* Text/border color */
+  --gray-200: #ffffff;    /* Text/border color */
+  --gray-300: #ffffff;    /* Text/border color */
+  --gray-400: #ffffff;    /* Text/border color */
+  --gray-500: #ffffff;    /* Text/border color */
+  --gray-600: #ffffff;    /* Text/border color */
+  --gray-700: #ffffff;    /* Text/border color */
+  --gray-800: #ffffff;    /* Text/border color */
+  --gray-900: #131313;    /* Background color */
   --gray-999-basis: 225, 31%, 5%;
-  --gray-999: #090b11;
+  --gray-999_40: hsla(var(--gray-999-basis), 0.4);
+  --gray-999: #131313;    /* Background color */
 
-  --accent-light: #7cceec;
-  --accent-regular: #00b2e0;
-  --accent-dark: #019ad4;
-  --accent-overlay: hsla(210, 53%, 55%, 0.33);
-  --accent-subtle-overlay: hsla(
-    224,
-    53%,
-    45%,
-    0.33
-  ); /* Slightly darker green overlay */
-  --accent-text-over: var(
-    --gray-0
-  ); /* No change, as it's a text color variable */
+  /* Accent colors - mapped to text color */
+  --accent-light: #ffffff;
+  --accent-regular: #ffffff;
+  --accent-dark: #ffffff;
+  --accent-overlay: hsla(0, 0%, 100%, 0.33);
+  --accent-subtle-overlay: var(--accent-overlay);
+  --accent-text-over: var(--gray-0);
 
-  --link-color: var(--accent-dark); /* Using the light green for links */
+  /* Link color */
+  --link-color: var(--accent-regular);
 
-  --gradient-stop-1: #0f58d5;
-  --gradient-subtle: linear-gradient(
-    150deg,
-    var(--gray-900) 19%,
-    var(--gray-999) 81%
-  );
-  --gradient-accent-orange: linear-gradient(
-    150deg,
-    #ca7879,
-    var(--accent-regular),
-    var(--accent-light)
-  );
+  /* Gradients - simplified to use our two colors */
+  --gradient-stop-1: #ffffff;
+  --gradient-stop-2: #ffffff;
+  --gradient-stop-3: #ffffff;
+  --gradient-subtle: linear-gradient(150deg, var(--gray-900) 19%, var(--gray-999) 81%);
+  --gradient-accent-orange: linear-gradient(150deg, #ffffff, var(--accent-regular), var(--accent-light));
   --gradient-stroke: linear-gradient(180deg, var(--gray-600), var(--gray-800));
 
+  /* Dark mode shadows */
   --shadow-sm: 0px 6px 3px rgba(255, 255, 255, 0.01),
     0px 4px 2px rgba(255, 255, 255, 0.01), 0px 2px 2px rgba(255, 255, 255, 0.02),
     0px 0px 1px rgba(255, 255, 255, 0.03);
-  --shadow-md: 0px 28px 11px rgba(255, 255, 255, 0.01),
-    0px 16px 10px rgba(255, 255, 255, 0.03),
-    0px 7px 7px rgba(255, 255, 255, 0.05), 0px 2px 4px rgba(255, 255, 255, 0.06);
+  --shadow-md: 0px 0px 11px rgba(255, 255, 255, 0.01),
+    0px 0px 10px rgba(255, 255, 255, 0.03), 0px 0px 7px rgba(255, 255, 255, 0.05),
+    0px 0px 4px rgba(255, 255, 255, 0.06);
   --shadow-lg: 0px 62px 25px rgba(255, 255, 255, 0.01),
     0px 35px 21px rgba(255, 255, 255, 0.05),
     0px 16px 16px rgba(255, 255, 255, 0.1),
@@ -230,7 +210,7 @@ h5 {
 }
 
 .job-title {
-  border-bottom: solid 1px #4caf50;
+  border-bottom: solid 1px var(--gray-800);
   padding-bottom: 0.5em;
   margin-bottom: 0.5em;
   text-wrap: pretty;
@@ -264,6 +244,7 @@ h5 {
   background-color: var(--gray-900);
   border-radius: 2em;
   overflow: hidden;
+  border: 1px solid var(--gray-800);
 }
 
 .experience-list {
@@ -275,7 +256,7 @@ h5 {
 .current {
   height: 1em;
   width: 100em;
-  background-color: #4caf4f4c;
+  background-color: var(--gray-800);
   position: relative;
   top: 40px;
   left: -13%;
@@ -283,10 +264,11 @@ h5 {
 
 .tag-work {
   background-color: var(--gray-800);
+  
   border-radius: 100em;
   padding: 0.25em 1em;
   font-size: 1em;
-  color: var(--gray-50);
+  color: var(--gray-900);
 }
 
 /* Utilities */
@@ -319,7 +301,7 @@ h5 {
   gap: 0.5rem;
 }
 .gap-4 {
-  gap: 1rem;
+  gap: 2rem;
 }
 .gap-8 {
   gap: 2rem;
@@ -501,6 +483,7 @@ a.github-link {
   flex-direction: row;
   align-items: center;
   gap: 0.5em;
+  padding: 1rem;
 
   h4 {
     font-size: 1em;

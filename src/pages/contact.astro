@@ -1,8 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import supabase from "../components/lib/supabase";
 import Hero from "../components/Hero.astro";
-import ContactForm from "../components/ContactForm";
+import ContactCTA from "../components/ContactCTA.astro";
 ---
 
 <BaseLayout
@@ -12,10 +11,10 @@ import ContactForm from "../components/ContactForm";
   <main class="stack gap-10">
     <div class="wrapper about">
       <Hero
-        title="Contact Me"
-        tagline="Reach out and let me know if you'd like to collaborate with me!"
+        title="Contact"
+        tagline=""
       />
-      <div class="form"><ContactForm client:load /></div>
+      <ContactCTA />
     </div>
   </main>
 </BaseLayout>
@@ -23,5 +22,11 @@ import ContactForm from "../components/ContactForm";
 <style>
   .about {
     gap: 0;
+  }
+
+  .aside {
+    padding: 0.5rem;
+    width: 800px;
+    margin: 0 auto;
   }
 </style>

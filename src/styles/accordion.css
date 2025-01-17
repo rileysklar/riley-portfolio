@@ -2,44 +2,56 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 0.5em;
-  color: var(--gray-100);
+  gap: 1.5em;
+  color: var(--gray-0);
 }
 
 .accordion-item {
   padding: 1em;
   cursor: pointer;
-  border-top: 4px solid var(--gray-999);
-  border-bottom: 4px solid var(--gray-999);
+  border: 1px solid var(--gray-0);
   border-radius: 1em;
   display: grid;
   grid-template-columns: auto 1fr auto;
   column-gap: 24px;
   row-gap: 32px;
   align-items: center;
-  background-color: var(--gray-900);
+  background-color: var(--gray-999);
+  transition: all 0.3s ease;
+}
+
+.accordion-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .accordion-number {
   font-size: 24px;
   font-weight: 500;
-  color: var(--gray-600);
+  color: var(--gray-0);
 }
 
 .accordion-title {
   font-size: 1.2em;
   line-height: 1.2;
   font-weight: 800;
+  color: var(--gray-0);
 }
 
 .accordion-title:hover {
-  color: var(--accent-dark);
+  opacity: 0.8;
   transition: all ease 0.5s;
 }
 
 .accordion-icon {
   font-size: 2.5em;
   font-weight: 500;
+  color: var(--gray-0);
+  transition: transform 0.3s ease;
+}
+
+.open .accordion-icon {
+  transform: rotate(180deg);
 }
 
 .content-box {
@@ -47,10 +59,25 @@
   padding-bottom: 16px;
   line-height: 1.6;
   font-size: 1.2em;
+  color: var(--gray-0);
+  animation: slideDown 0.3s ease-out forwards;
+  transform-origin: top;
+  overflow: hidden;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .content-box ul {
-  color: var(--gray-700);
+  color: var(--gray-0);
   margin-left: 16px;
   margin-top: 16px;
   display: flex;
@@ -60,12 +87,14 @@
 
 /* OPEN STATE */
 .open {
-  border-top: 4px solid var(--accent-regular); /* Updated */
+  border-top: 4px solid var(--gray-0);
+  transform: scale(1.01);
+  transition: all 0.3s ease;
 }
 
 .open .number,
 .open .title {
-  color: var(--accent-regular); /* Updated */
+  color: var(--gray-0);
 }
 
 @media (min-width: 50em) {
