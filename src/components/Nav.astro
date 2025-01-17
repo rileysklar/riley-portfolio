@@ -188,6 +188,11 @@ const iconLinks: {
       const setExpanded = (expand: boolean) => {
         btn.setAttribute("aria-expanded", expand ? "true" : "false");
         menu.hidden = !expand;
+        // Toggle nav border radius
+        const nav = document.querySelector("nav");
+        if (nav) {
+          nav.style.borderRadius = expand ? "1rem" : "100rem";
+        }
       };
 
       // Toggle menu visibility when the menu button is clicked.
@@ -197,6 +202,11 @@ const iconLinks: {
       const handleViewports = (e: MediaQueryList | MediaQueryListEvent) => {
         setExpanded(e.matches);
         btn.hidden = e.matches;
+        // Reset border radius for desktop
+        const nav = document.querySelector("nav");
+        if (nav && e.matches) {
+          nav.style.borderRadius = "100rem";
+        }
       };
       const mediaQueries = window.matchMedia("(min-width: 50em)");
       handleViewports(mediaQueries);
@@ -243,7 +253,8 @@ const iconLinks: {
     backdrop-filter: blur(40px);
     -webkit-backdrop-filter: blur(40px);
     border-radius: 100rem;
-    margin: 1rem;
+    margin: 1.5rem;
+    background-color: var(--gray-999_40);
   }
 
   .menu-header {
@@ -316,15 +327,15 @@ const iconLinks: {
     position: absolute;
     left: 0;
     right: 0;
-    top: 4.5rem;
     animation: slideDown 0.2s ease-out;
-    border-radius: 1rem;
-    box-shadow: var(--shadow-md);
-    margin: 0.5rem;
     overflow: hidden;
+    position: relative;
   }
 
+ 
+
   .nav-items {
+    position: relative;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -334,8 +345,6 @@ const iconLinks: {
     line-height: 1.2;
     list-style: none;
     padding: 2rem;
-    background-color: var(--gray-900);
-    /* border-bottom: .5px solid var(--gray-800); */
   }
 
   @keyframes slideDown {
@@ -360,14 +369,10 @@ const iconLinks: {
   .menu-footer {
     --icon-size: var(--text-xl);
     --icon-padding: 0.5rem;
-
     display: flex;
     justify-content: space-between;
     gap: 0.75rem;
     padding: 1.5rem 2rem 1.5rem 1.5rem;
-    background-color: var(--gray-999);
-    border-radius: 0 0 0.75rem 0.75rem;
-    box-shadow: var(--shadow-lg);
   }
 
   .socials {
