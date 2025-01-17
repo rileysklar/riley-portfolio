@@ -26,6 +26,18 @@ const {
 <link rel="canonical" href={`https://rileysklar.io${Astro.url.pathname}`} />
 <title>{title}</title>
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SMQVHDXF6D"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    // @ts-ignore
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+  gtag('config', 'G-SMQVHDXF6D');
+</script>
+
 <link rel="icon" type="image/svg+xml" href="/favicon.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
