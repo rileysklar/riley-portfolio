@@ -17,7 +17,7 @@
   --gray-800: #0959da	;    /* Text/border color */
   --gray-900: #ffffff;    /* Background color */
   --gray-999-basis: 0, 0%, 100%;
-  --gray-999_40: hsla(var(--gray-999-basis), 0.7);
+  --gray-999_40: hsla(var(--gray-999-basis), 0.4);
   --gray-999: #ffffff;    /* Background color */
 
   /* Accent colors - mapped to primary color */
@@ -86,6 +86,7 @@
   --gray-800: #ffffff;    /* Text/border color */
   --gray-900: #131313;    /* Background color */
   --gray-999-basis: 225, 31%, 5%;
+  --gray-999_40: hsla(var(--gray-999-basis), 0.4);
   --gray-999: #131313;    /* Background color */
 
   /* Accent colors - mapped to text color */
@@ -300,7 +301,7 @@ h5 {
   gap: 0.5rem;
 }
 .gap-4 {
-  gap: 1rem;
+  gap: 2rem;
 }
 .gap-8 {
   gap: 2rem;
@@ -482,6 +483,7 @@ a.github-link {
   flex-direction: row;
   align-items: center;
   gap: 0.5em;
+  padding: 1rem;
 
   h4 {
     font-size: 1em;

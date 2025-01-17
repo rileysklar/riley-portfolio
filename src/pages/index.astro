@@ -51,8 +51,9 @@ const faqs = [
       <header class="hero">
         <Hero
           title="Hi, I'm Riley"
-          tagline="Front End Developer & UI Designer based in Austin, Texas 📱💻"
+          tagline="Based in Austin, Texas"
           align="start"
+          isHomePage={true}
         >
           <div class="roles">
             <a href="https://github.com/rileysklar"
@@ -111,7 +112,7 @@ const faqs = [
     <main class="wrapper stack gap-20 lg:gap-48">
       <div class="faq-parent">
         <div class="section-header stack gap-2 lg:gap-4">
-          <h3 class="faq">📋 FAQ</h3>
+          <h3 class="faq">FAQ</h3>
         </div>
         <Accordion client:only data={faqs} />
       </div>
@@ -147,7 +148,7 @@ const faqs = [
     /* aspect-ratio: 5 / 4; */
     object-fit: cover;
     object-position: top;
-    border-radius: 1em;
+    border-radius: 1rem;
     order: 1px solid var(--gray-800);
     /* box-shadow: var(--shadow-md); */
     max-width: 60%;
@@ -177,7 +178,6 @@ const faqs = [
 
     .hero img {
       aspect-ratio: 1;
-      border-radius: 3.5em;
       object-fit: cover;
       max-width: 100%;
     }

@@ -3,18 +3,56 @@ interface Props {
   title: string;
   tagline?: string;
   align?: "start" | "center";
+  isHomePage?: boolean;
 }
 
-const { align = "center", tagline, title } = Astro.props;
+const { align = "center", tagline, title, isHomePage = false } = Astro.props;
 ---
 
 <div class:list={["hero stack gap-4", align]}>
   <div class="stack gap-2">
-    <h1 class="title">{title}</h1>
+    {isHomePage ? (
+      <div id="hero-title" class="title"></div>
+    ) : (
+      <h1 class="title">{title}</h1>
+    )}
     {tagline && <p class="tagline">{tagline}</p>}
   </div>
   <slot />
 </div>
+
+<script>
+  import { TypeAnimation } from 'react-type-animation';
+  import React from 'react';
+  import { createRoot } from 'react-dom/client';
+
+  function TypewriterTitle() {
+    const isMobile = window.innerWidth < 768;
+    return React.createElement(TypeAnimation, {
+      sequence: [
+        'Hi, I\'m Riley',
+        1000,
+        'Hi, I\'m a Developer',
+        1000,
+        'Hi, I\'m a Designer',
+        1000,
+      ],
+      wrapper: 'h1',
+      cursor: true,
+      repeat: Infinity,
+      style: { 
+        fontSize: isMobile ? '24px' : '44px', 
+        display: 'inline-block' 
+      }
+    });
+  }
+
+  const container = document.getElementById('hero-title');
+  if (container) {
+    const root = createRoot(container);
+    root.render(React.createElement(TypewriterTitle));
+  }
+</script>
 
 <style>
   .hero {
@@ -39,7 +77,7 @@ const { align = "center", tagline, title } = Astro.props;
 
   @media (min-width: 50em) {
     .hero {
-      font-size: var(--text-xl);
+      font-size: var(--text-md);
     }
 
     .start {

@@ -20,18 +20,21 @@
     "@types/react-dom": "^18.2.18",
     "astro": "^4.2.6",
     "autoprefixer": "^10.4.17",
+    "framer-motion": "^11.18.0",
     "latest": "^0.2.0",
     "n": "^9.2.1",
     "postcss": "^8.4.35",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-github-calendar": "^4.1.2",
+    "react-type-animation": "^3.2.0",
     "stable": "^0.1.8",
     "tailwindcss": "^3.4.1"
   },
   "packageManager": "pnpm@9.0.3+sha256.f5becd4b77fe9150c8d89423612eb413945114bf6dd00fdcb5940434b84731c4",
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.12",
-    "postcss-nesting": "^13.0.1"
+    "postcss-nesting": "^13.0.1",
+    "tailwindcss-motion": "^1.0.1"
   }
 }

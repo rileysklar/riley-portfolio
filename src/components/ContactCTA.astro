@@ -5,7 +5,7 @@ import Icon from "./Icon.astro";
 <aside>
   <div class="content">
     <h2 class="pt-8 p-4 text-md">
-      Send me an email!
+      Send me an email...<span class="blinking-cursor">|</span>
     </h2>
     <div class="form-wrapper">
       <div id="contact-form"></div>
@@ -120,10 +120,9 @@ import Icon from "./Icon.astro";
 
 <style>
   aside {
-    border-top: 1px solid var(--gray-800);
     width: 100%;
     max-width: 800px;
-    margin: 0 auto;
+    margin: 3rem auto;
   }
 
   .content {
@@ -156,7 +155,7 @@ import Icon from "./Icon.astro";
     background-color: var(--gray-900);
     margin-bottom: 4em;
     border-radius: 2em;
-    padding: 1rem;
+    padding: 1.5rem;
   }
 
   :global(.form-label) {
@@ -237,5 +236,15 @@ import Icon from "./Icon.astro";
     background-position: center;
     background-repeat: repeat;
     filter: grayscale(100%) opacity(0.3);
+  }
+
+  .blinking-cursor {
+    animation: blink 1s step-end infinite;
+  }
+
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
   }
 </style>
