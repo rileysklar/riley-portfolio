@@ -26,6 +26,18 @@ const { align = "center", tagline, title, isHomePage = false } = Astro.props;
   import React from 'react';
   import { createRoot } from 'react-dom/client';
 
+  // Easter egg for curious developers
+  console.log(
+    '%cHey there, fellow developer! 👋\n' +
+    '%cI see you checking out the console - I like your style!\n' +
+    '%cSince you\'re here, you might be interested in the source code: https://github.com/rileysklar\n' +
+    '%cHappy coding! 🚀',
+    'font-size: 14px; font-weight: bold; color: #0959da;',
+    'font-size: 12px; color: #666;',
+    'font-size: 12px; color: #666;',
+    'font-size: 12px; font-weight: bold; color: #0959da;'
+  );
+
   function TypewriterTitle() {
     const isMobile = window.innerWidth < 768;
     return React.createElement(TypeAnimation, {
