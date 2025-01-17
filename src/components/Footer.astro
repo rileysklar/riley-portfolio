@@ -67,8 +67,8 @@ const currentYear = new Date().getFullYear();
     color: var(--gray-200);
     font-size: var(--text-sm);
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-    border-radius: 1rem 1rem 0 0;
-    border-top: 1px solid var(--gray-800);
+    background-color: var(--gray-800);
+    color: var(--gray-900);
   }
 
   footer::before {
@@ -83,13 +83,15 @@ const currentYear = new Date().getFullYear();
     background-position: center;
     background-repeat: no-repeat;
     filter: grayscale(100%) opacity(0.8);
-    opacity: .1;
+    opacity: .2;
     z-index: 0;
   }
 
+
+
   footer a {
-    color: var(--accent-dark);
-    text-decoration: 1px solid underline transparent;
+    color: var(--gray-900);
+    text-decoration: 1px solid underline;
     text-underline-offset: 0.25em;
     transition: text-decoration-color var(--theme-transition);
     position: relative;

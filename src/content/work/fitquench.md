@@ -1,7 +1,7 @@
 ---
 title: 🏃 FitQuench Exercise Tracker App
 publishDate: 2024-04-09 00:00:00
-img: /assets/fitquench.jpg
+img: /assets/fitquench.png
 img_alt: A screenshot of the OpenAI iMessage App interface with a chat conversation.
 description: Welcome to FitQuench, a fun and interactive app built with React, Node.js, Vite, Supabase database and user authentication! This app is designed to help you keep track of your exercise and drinking habits. FitQuench allows you to log the days you exercise 🏃‍♀️ and the days you enjoy a drink 🍷. It provides a visual representation of your habits, helping you understand your lifestyle better.
 tags:
