@@ -191,7 +191,7 @@ const iconLinks: {
         // Toggle nav border radius
         const nav = document.querySelector("nav");
         if (nav) {
-          nav.style.borderRadius = expand ? "1rem" : "100rem";
+          nav.style.borderRadius = expand ? "1rem" : "1rem";
         }
       };
 
@@ -205,7 +205,7 @@ const iconLinks: {
         // Reset border radius for desktop
         const nav = document.querySelector("nav");
         if (nav && e.matches) {
-          nav.style.borderRadius = "100rem";
+          nav.style.borderRadius = "1rem";
         }
       };
       const mediaQueries = window.matchMedia("(min-width: 50em)");
@@ -252,7 +252,7 @@ const iconLinks: {
     align-content: center;
     backdrop-filter: blur(40px);
     -webkit-backdrop-filter: blur(40px);
-    border-radius: 100rem;
+    border-radius: 1rem;
     margin: 1.5rem;
     background-color: var(--gray-999_40);
     border: 1px solid var(--gray-800);
@@ -345,7 +345,7 @@ const iconLinks: {
     align-items: center;
     line-height: 1.2;
     list-style: none;
-    padding: 2rem;
+    padding: 1rem;
   }
 
   @keyframes slideDown {
@@ -420,7 +420,7 @@ const iconLinks: {
       display: grid;
       grid-template-columns: 1fr auto 1fr;
       align-items: center;
-      padding: 1.5rem ;
+      padding: .5rem ;
       gap: 1rem;
     }
 

@@ -1,6 +1,5 @@
 ---
 import { getCollection } from "astro:content";
-import { Accordion } from "../components/Accordion";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import ContactCTA from "../components/ContactCTA.astro";
 import PortfolioPreview from "../components/PortfolioPreview.astro";
@@ -8,6 +7,8 @@ import Hero from "../components/Hero.astro";
 import Grid from "../components/Grid.astro";
 import GitHubCalendar from "react-github-calendar";
 import Icon from "../components/Icon.astro";
+import { Accordion } from "../components/Accordion.jsx";
+
 const projects = (await getCollection("work")).sort(
   (a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf()
 );
@@ -70,7 +71,7 @@ const faqs = [
         <div class="section-header stack gap-2 lg:gap-4">
           <h3 class="faq">FAQ</h3>
         </div>
-        <Accordion client:only data={faqs} />
+        <Accordion client:only="react" data={faqs} />
       </div>
     </main>
     <ContactCTA />
